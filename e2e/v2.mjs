@@ -52,6 +52,7 @@ async function newCtx(opts = {}) {
   const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 }, acceptDownloads: true, ...opts })
   const page = await ctx.newPage()
   livePages.add(page)
+  livePages.add(page)
   page.on('pageerror', (e) => problems.push(`pageerror: ${e.message}`))
   page.on('console', (m) => { if (m.type() === 'error' && !IGNORE.some((re) => re.test(m.text()))) problems.push(`console.error: ${m.text().slice(0, 200)} @ ${page.url()}`) })
   page.on('requestfailed', (r) => { const t = r.failure()?.errorText || ''; if (!t.includes('ERR_ABORTED') && !r.url().startsWith('chrome-extension://')) problems.push(`requestfailed (${t}): ${r.url()}`) })
