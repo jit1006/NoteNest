@@ -148,3 +148,6 @@
 @keyframes block-flash { 0% { background: rgb(250 204 21 / 0.45); } 100% { background: transparent; } }
 .react-pdf__Page { background: white; box-shadow: 0 2px 12px rgb(15 23 42 / 0.15); }
 .react-pdf__Page__textContent { user-select: text; }
+
+/* the writing surface shows a subtle caret instead of a heavy focus box */
+.note-prose.ProseMirror:focus-visible { outline: none; box-shadow: none; }

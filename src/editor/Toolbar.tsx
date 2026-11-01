@@ -77,7 +77,7 @@ export default function Toolbar({ editor, onPickImage, onPickAttachment, uploadi
 
   return (
     <div role="toolbar" aria-label="Formatting" className="sticky top-16 z-20 -mx-4 border-y border-slate-200 bg-white/90 px-4 py-1.5 backdrop-blur sm:mx-0 sm:rounded-xl sm:border dark:border-slate-800 dark:bg-slate-900/90">
-      <div className="flex items-center gap-0.5 overflow-x-auto pb-0.5">
+      <div className="flex items-center gap-0.5 overflow-x-auto pb-0.5 sm:flex-wrap sm:overflow-visible">
         <Btn label="Undo (Ctrl+Z)" disabled={!editor.can().undo()} onClick={() => c().undo().run()}><Undo2 className="h-4 w-4" /></Btn>
         <Btn label="Redo (Ctrl+Shift+Z)" disabled={!editor.can().redo()} onClick={() => c().redo().run()}><Redo2 className="h-4 w-4" /></Btn>
         <Sep />
