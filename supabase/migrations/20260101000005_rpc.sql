@@ -7,6 +7,8 @@ create or replace function public.search_library(
   p_query           text default '',
   p_scope           text default 'all',      -- 'all' (everything I may read) | 'public' | 'mine'
   p_types           text[] default null,     -- 'note' and/or resource kinds ('pdf','markdown',...)
+  p_category        text default null,       -- resource category: notes | pyq | reference | assignment | other
+  p_year            integer default null,    -- academic_year (PYQ papers)
   p_semester_number integer default null,
   p_subject_id      uuid default null,
   p_owner_id        uuid default null,
@@ -15,7 +17,7 @@ create or replace function public.search_library(
   p_limit           integer default 20,
   p_offset          integer default 0
 ) returns table (
-  entity_type text, id uuid, title text, snippet text, kind text, icon text,
+  entity_type text, id uuid, title text, snippet text, kind text, icon text, category text, academic_year smallint,
   owner_id uuid, owner_username text, owner_display_name text,
   space_id uuid, semester_id uuid, semester_number smallint, semester_title text,
   subject_id uuid, subject_title text, visibility public.visibility,
@@ -31,15 +33,16 @@ as $$
   ),
   hits as (
     select 'note'::text as entity_type, n.id, n.title, n.content_text as body, 'note'::text as kind, n.icon,
-           n.owner_id, n.space_id, n.semester_id, n.subject_id, n.visibility, n.created_at, n.updated_at,
+           null::text as category, null::smallint as academic_year, n.owner_id, n.space_id, n.semester_id, n.subject_id, n.visibility, n.created_at, n.updated_at,
            (case when q.tsq is null then 0::real
                  else ts_rank(n.search, q.tsq) + (case when n.title ilike q.pat then 0.5 else 0 end)::real end)::real as rank
     from public.notes n cross join q
     where n.deleted_at is null and n.visibility <> 'unlisted'
       and (q.raw is null or n.search @@ q.tsq or n.title ilike q.pat)
       and (p_types is null or 'note' = any (p_types))
+      and p_category is null and p_year is null
     union all
-    select 'resource'::text, r.id, r.title, r.description, r.kind::text, null::text,
+    select 'resource'::text, r.id, r.title, r.description, r.kind::text, null::text, r.category, r.academic_year,
            r.owner_id, r.space_id, r.semester_id, r.subject_id, r.visibility, r.created_at, r.updated_at,
            (case when q.tsq is null then 0::real
                  else ts_rank(r.search, q.tsq) + (case when r.title ilike q.pat then 0.5 else 0 end)::real end)::real
@@ -47,6 +50,8 @@ as $$
     where r.deleted_at is null and r.attached_note_id is null and r.visibility <> 'unlisted'
       and (q.raw is null or r.search @@ q.tsq or r.title ilike q.pat)
       and (p_types is null or r.kind::text = any (p_types))
+      and (p_category is null or r.category = p_category)
+      and (p_year is null or r.academic_year = p_year)
   ),
   filtered as (
     select h.*, s.number as semester_number, s.title as semester_title, sub.title as subject_title,
@@ -75,7 +80,7 @@ as $$
          case when pg.entity_type = 'note' and q.tsq is not null
               then ts_headline('english', pg.body, q.tsq, 'MaxFragments=1, MaxWords=25, MinWords=8, StartSel=⟦, StopSel=⟧')
               else left(pg.body, 180) end,
-         pg.kind, pg.icon, pg.owner_id, pg.owner_username, pg.owner_display_name,
+         pg.kind, pg.icon, pg.category, pg.academic_year, pg.owner_id, pg.owner_username, pg.owner_display_name,
          pg.space_id, pg.semester_id, pg.semester_number, pg.semester_title,
          pg.subject_id, pg.subject_title, pg.visibility, pg.created_at, pg.updated_at, pg.rank, pg.total
   from page pg cross join q
@@ -126,11 +131,11 @@ as $$
 $$;
 
 create or replace function public.recent_public_uploads(p_limit integer default 8)
-returns table (id uuid, title text, kind text, owner_id uuid, owner_username text, owner_display_name text,
+returns table (id uuid, title text, kind text, category text, owner_id uuid, owner_username text, owner_display_name text,
                space_id uuid, created_at timestamptz, size_bytes bigint, extension text)
 language sql stable security definer set search_path = ''
 as $$
-  select r.id, r.title, r.kind::text, r.owner_id, p.username, p.display_name, r.space_id, r.created_at, f.size_bytes, f.extension
+  select r.id, r.title, r.kind::text, r.category, r.owner_id, p.username, p.display_name, r.space_id, r.created_at, f.size_bytes, f.extension
   from public.resources r
   join public.profiles p on p.id = r.owner_id
   left join lateral (select rf.size_bytes, rf.extension from public.resource_files rf where rf.resource_id = r.id order by rf.created_at limit 1) f on true
@@ -172,7 +177,7 @@ begin
   insert into public.activity_events (actor_id, space_id, event_type, entity_type, entity_id)
   values (auth.uid(), r.space_id, 'resource.shared_view', 'resource', r.id);
   return jsonb_build_object(
-    'id', r.id, 'title', r.title, 'description', r.description, 'kind', r.kind, 'owner_id', r.owner_id,
+    'id', r.id, 'title', r.title, 'description', r.description, 'kind', r.kind, 'category', r.category, 'owner_id', r.owner_id,
     'created_at', r.created_at, 'space_id', r.space_id, 'files', v_files);
 end $$;
 

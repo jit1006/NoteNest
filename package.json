@@ -14,7 +14,7 @@
     "test:e2e": "node e2e/smoke.mjs",
     "check": "npm run check:data && npm run test:logic && npm run build",
     "pdfs": "python3 tools/generate_pdfs.py && python3 tools/verify_pdfs.py",
-    "test:db": "node --test tests/db/",
+    "test:db": "node --test --test-concurrency=2 \"tests/db/*.test.mjs\"",
     "seed:demo": "node scripts/seed-demo.mjs",
     "start": "node server.mjs"
   },

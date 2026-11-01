@@ -163,6 +163,8 @@ create table public.resources (
   title       text not null check (char_length(title) between 1 and 200),
   description text not null default '' check (char_length(description) <= 4000),
   kind        public.resource_kind not null,
+  category    text not null default 'notes' check (category in ('notes', 'pyq', 'reference', 'assignment', 'other')),
+  academic_year smallint check (academic_year is null or academic_year between 1990 and 2100),
   visibility  public.visibility not null default 'private',
   share_token uuid not null default gen_random_uuid(),
   search      tsvector generated always as (
