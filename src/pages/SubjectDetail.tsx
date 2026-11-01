@@ -72,7 +72,7 @@ export default function SubjectDetail() {
           <Layers className="h-5 w-5 text-brand-600" aria-hidden="true" />
           Units and chapters
         </h2>
-        <ol className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <ol className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {subject.units.map((u) => (
             <li key={u.title} className="card p-5">
               <h3 className="text-base">{u.title}</h3>

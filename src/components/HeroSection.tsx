@@ -22,7 +22,7 @@ export default function HeroSection() {
 
   return (
     <section className="hero-mesh relative overflow-hidden" aria-labelledby="hero-title">
-      <div className="container-page grid items-center gap-12 py-14 sm:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
+      <div className="container-page grid grid-cols-[minmax(0,1fr)] items-center gap-12 py-14 sm:py-20 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:py-24">
         <div>
           <p className="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white/70 px-3 py-1 text-xs font-semibold text-brand-700 backdrop-blur dark:border-brand-500/30 dark:bg-slate-900/60 dark:text-brand-200">
             <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />

@@ -48,7 +48,7 @@ export default function Landing() {
           title="Core subjects, covered end to end"
           description="Units, chapters, notes, practice papers and quick references for each subject."
         />
-        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {featured.map((s) => (
             <li key={s.id}>
               <SubjectCard subject={s} />
@@ -81,7 +81,7 @@ export default function Landing() {
 
       <section className="container-page py-14" aria-labelledby="benefit-title">
         <SectionHeading eyebrow="Why NoteNest" title="Everything you need to study smarter" id="benefit-title" />
-        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {BENEFITS.map(({ icon: Icon, title, text }) => (
             <li key={title} className="card p-5">
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-accent-500 text-white">

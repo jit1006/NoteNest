@@ -46,7 +46,7 @@ export default function PYQLibrary() {
         </span>
       </p>
 
-      <div className="grid gap-6 lg:grid-cols-[18rem_1fr]">
+      <div className="grid grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-[18rem_minmax(0,1fr)]">
         <div className="lg:sticky lg:top-24 lg:self-start">
           <FilterPanel filters={{ ...filters, type: null }} onChange={update} onReset={reset} years={years} hideType />
         </div>

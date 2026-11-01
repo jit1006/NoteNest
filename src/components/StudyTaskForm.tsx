@@ -46,7 +46,7 @@ export default function StudyTaskForm({ onAdd }: { onAdd: (t: NewTask) => boolea
           </p>
         )}
       </div>
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
           <label htmlFor={`${uid}-sub`} className="label">Subject (optional)</label>
           <select id={`${uid}-sub`} className="input" value={subjectId} onChange={(e) => setSubjectId(e.target.value)}>

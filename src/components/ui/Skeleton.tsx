@@ -15,7 +15,7 @@ export function PageSkeleton() {
     <div className="container-page py-12" role="status" aria-live="polite" aria-label="Loading page">
       <div className="skeleton mb-4 h-8 w-64" />
       <div className="skeleton mb-10 h-4 w-96 max-w-full" />
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {Array.from({ length: 3 }, (_, i) => (
           <CardSkeleton key={i} />
         ))}

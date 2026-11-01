@@ -57,7 +57,7 @@ export default function ResourceDetail() {
         </div>
       </header>
 
-      <div className="grid gap-8 lg:grid-cols-[1fr_20rem]">
+      <div className="grid grid-cols-[minmax(0,1fr)] gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
         <PDFViewer resource={resource} />
 
         <aside aria-label="Resource details" className="space-y-5">
