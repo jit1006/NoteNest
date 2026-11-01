@@ -13,6 +13,7 @@ assert.ok(ANON_KEY && SERVICE_KEY, 'SUPABASE_ANON_KEY and SUPABASE_SERVICE_ROLE_
 const opts = { auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false } }
 export const admin = createClient(API_URL, SERVICE_KEY, opts)
 export const newClient = () => createClient(API_URL, ANON_KEY, opts)
+export const anon = newClient
 export const PASSWORD = 'Test-pass-123!'
 
 /** Create a confirmed user via the admin API and return a signed-in client. */

@@ -44,7 +44,8 @@ describe('Supabase Auth: email confirmation, sign-in rules and password reset', 
     assert.ifError(r.error)
     const mail = await waitForMail(email, 'reset')
     const loc = await follow(firstLink(mail))
-    const params = new URLSearchParams(loc.hash.replace(/^#/, '') || loc.search)
+    const frag = loc.href.includes('#') ? loc.href.slice(loc.href.lastIndexOf('#') + 1) : ''
+    const params = new URLSearchParams(frag.includes('access_token') ? frag : loc.search)
     const access_token = params.get('access_token'), refresh_token = params.get('refresh_token')
     assert.ok(access_token && refresh_token, `recovery tokens expected in ${loc.href}`)
     const c = newClient()

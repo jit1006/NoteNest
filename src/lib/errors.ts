@@ -1,4 +1,4 @@
-import type { PostgrestError, AuthError, StorageError } from '@supabase/supabase-js'
+import type { PostgrestError, AuthError } from '@supabase/supabase-js'
 
 export class ApiError extends Error {
   code?: string
@@ -11,7 +11,7 @@ export class ApiError extends Error {
   }
 }
 
-type AnyError = PostgrestError | AuthError | StorageError | Error | { message: string; code?: string; status?: number } | null | undefined
+type AnyError = PostgrestError | AuthError | Error | { message: string; code?: string; status?: number } | null | undefined
 
 const FRIENDLY: [RegExp, string][] = [
   [/rate_limit_exceeded/i, 'You are creating items too quickly. Please wait a little and try again.'],
