@@ -24,6 +24,12 @@ jobs:
         run: npm run test:logic
       - name: Typecheck and production build
         run: npm run build
+      - name: Browser smoke tests (routes, search, filters, persistence, dark mode, mobile, PDFs, console)
+        run: |
+          npx playwright install --with-deps chromium
+          (cd dist && python3 -m http.server 4173 --bind 127.0.0.1 > /dev/null 2>&1 &)
+          sleep 2
+          BASE_URL=http://127.0.0.1:4173 npm run test:e2e
       - name: Upload static build
         uses: actions/upload-artifact@v4
         with:

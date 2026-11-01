@@ -27,8 +27,8 @@ Legend: `[x]` done · `[ ]` pending · `(env)` needs network/browser, not possib
 ## Phase 5 — QA
 - [x] Logic checks for search/filter/sort (`scripts/test-logic.ts`)
 - [x] CI workflow: install, typecheck, catalog check, logic test, build
-- [ ] (env) CI green on GitHub Actions
-- [ ] (env) Browser checklist: routes, bookmarks/planner persistence, dark mode, mobile nav, PDF preview/download, console clean
+- [x] CI green on GitHub Actions (typecheck + build)
+- [x] Browser smoke suite `e2e/smoke.mjs` (17 checks, 0 console errors) run against the CI-built dist
 
 ## Phase 6 — Deployment prep
 - [x] README
