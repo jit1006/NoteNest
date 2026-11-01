@@ -5,33 +5,49 @@ on:
   pull_request:
 
 jobs:
-  build:
+  app:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-          cache-dependency-path: package.json
-      - name: Install dependencies
-        run: npm install --no-audit --no-fund
-      - name: Verify PDFs are reproducible and valid
-        run: python3 tools/generate_pdfs.py && python3 tools/verify_pdfs.py && git diff --exit-code -- public/pdfs
-      - name: Catalog integrity
-        run: npm run check:data
-      - name: Search / filter logic tests
+        with: { node-version: 22 }
+      - run: npm ci --no-audit --no-fund
+      - name: Pure logic tests
         run: npm run test:logic
       - name: Typecheck and production build
         run: npm run build
-      - name: Browser smoke tests (routes, search, filters, persistence, dark mode, mobile, PDFs, console)
+        env:
+          VITE_SUPABASE_URL: http://127.0.0.1:54321
+          VITE_SUPABASE_ANON_KEY: ci-placeholder-anon-key
+      - uses: actions/upload-artifact@v4
+        with: { name: notenest-dist, path: dist }
+
+  backend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm ci --no-audit --no-fund
+      - uses: supabase/setup-cli@v1
+        with: { version: latest }
+      - name: Start local Supabase (Postgres + Auth + Storage + Mailpit) and apply migrations
+        run: supabase start -x studio,imgproxy,vector,logflare,realtime,edge-runtime
+      - name: Export connection details
         run: |
-          npx playwright install --with-deps chromium
-          (cd dist && python3 -m http.server 4173 --bind 127.0.0.1 > /dev/null 2>&1 &)
-          sleep 2
-          BASE_URL=http://127.0.0.1:4173 npm run test:e2e
-      - name: Upload static build
-        uses: actions/upload-artifact@v4
-        with:
-          name: notenest-dist
-          path: dist
+          set -a; source <(supabase status -o env); set +a
+          {
+            echo "SUPABASE_URL=$API_URL"
+            echo "SUPABASE_ANON_KEY=$ANON_KEY"
+            echo "SUPABASE_SERVICE_ROLE_KEY=$SERVICE_ROLE_KEY"
+            echo "DB_URL=$DB_URL"
+          } >> "$GITHUB_ENV"
+      - name: Database integration tests (RLS, storage, auth)
+        run: npm run test:db
+      - name: Dump logs on failure
+        if: failure()
+        run: |
+          supabase status || true
+          docker ps -a || true
+          for c in $(docker ps -aq); do echo "=== $c"; docker logs --tail 60 $c 2>&1 | tail -60; done

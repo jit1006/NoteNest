@@ -1,0 +1,50 @@
+# Local Supabase stack used for development and CI (`supabase start`).
+project_id = "notenest"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[storage]
+enabled = true
+file_size_limit = "50MiB"
+
+[auth]
+enabled = true
+# Local URLs. In production set these in the hosted project's Auth → URL Configuration.
+site_url = "http://127.0.0.1:4173"
+additional_redirect_urls = [
+  "http://127.0.0.1:4173", "http://localhost:4173",
+  "http://127.0.0.1:5173", "http://localhost:5173"
+]
+jwt_expiry = 3600
+enable_refresh_token_rotation = true
+refresh_token_reuse_interval = 10
+enable_signup = true
+enable_anonymous_sign_ins = false
+minimum_password_length = 8
+
+[auth.email]
+enable_signup = true
+double_confirm_changes = true
+enable_confirmations = true      # email confirmation is REQUIRED (also locally; mails land in Mailpit)
+max_frequency = "1s"             # relaxed locally so automated tests can resend; hosted default is stricter
+
+# Google OAuth: enable + add client_id/secret (via env) only when credentials exist (see docs/SETUP.md).
+[auth.external.google]
+enabled = false
+
+[inbucket]
+enabled = true
+port = 54324
+
+[edge_runtime]
+enabled = true
+policy = "per_worker"
