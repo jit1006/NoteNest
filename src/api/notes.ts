@@ -11,6 +11,7 @@ const LIST_COLS = 'id,title,icon,space_id,semester_id,subject_id,folder_id,owner
 export function useNote(id: string | undefined) {
   return useQuery({
     queryKey: ['notes', 'one', id],
+    refetchOnMount: 'always', // re-check permissions every time a page is opened (access may have changed)
     enabled: !!id,
     queryFn: async () => unwrap(await supabase.from('notes').select('*').eq('id', id!).maybeSingle()) as Note | null,
   })

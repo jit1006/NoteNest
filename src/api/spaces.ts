@@ -28,6 +28,7 @@ export function useMySpaces() {
 export function useSpace(id: string | undefined) {
   return useQuery({
     queryKey: ['spaces', 'one', id],
+    refetchOnMount: 'always', // re-check permissions every time a page is opened (access may have changed)
     enabled: !!id,
     queryFn: async () => unwrap(await supabase.from('academic_spaces').select('*, profiles:owner_id(username, display_name)').eq('id', id!).maybeSingle()) as (Space & { profiles: { username: string; display_name: string } | null }) | null,
   })

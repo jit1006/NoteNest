@@ -52,7 +52,7 @@ export function useAutosave({ noteId, initialVersion, getPayload, delay = 1200 }
       attempts.current = 0
       setError(null)
       setSavedAt(new Date())
-      qc.setQueryData(['notes', 'one', noteId], (old: Note | null | undefined) => (old ? { ...old, title: saved.title, version: saved.version, updated_at: saved.updated_at, content_text: saved.content_text } : old))
+      qc.setQueryData(['notes', 'one', noteId], saved) // cache the FULL saved row (content included) so reading views never show stale text
       if (pending.current) { inFlight.current = false; set('dirty'); void flush(); return }
       set('saved')
     } catch (e) {

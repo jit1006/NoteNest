@@ -10,6 +10,7 @@ const WITH_FILES = '*, resource_files(*)'
 export function useResource(id: string | undefined) {
   return useQuery({
     queryKey: ['resources', 'one', id],
+    refetchOnMount: 'always', // re-check permissions every time a page is opened (access may have changed)
     enabled: !!id,
     queryFn: async () => unwrap(await supabase.from('resources').select(WITH_FILES).eq('id', id!).maybeSingle()) as Resource | null,
   })

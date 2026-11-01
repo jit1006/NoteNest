@@ -39,6 +39,7 @@ export function useSemesters(spaceId: string | undefined) {
 export function useSemester(id: string | undefined) {
   return useQuery({
     queryKey: ['semesters', 'one', id],
+    refetchOnMount: 'always', // re-check permissions every time a page is opened (access may have changed)
     enabled: !!id,
     queryFn: async () => unwrap(await supabase.from('semesters').select('*, academic_spaces(id,title,icon,owner_id,visibility)').eq('id', id!).maybeSingle()) as unknown as (Semester & { academic_spaces: Pick<Space, 'id' | 'title' | 'icon' | 'owner_id' | 'visibility'> | null }) | null,
   })
@@ -66,6 +67,7 @@ export function useSubjectsOfSpace(spaceId: string | undefined) {
 export function useSubject(id: string | undefined) {
   return useQuery({
     queryKey: ['subjects', 'one', id],
+    refetchOnMount: 'always', // re-check permissions every time a page is opened (access may have changed)
     enabled: !!id,
     queryFn: async () => unwrap(await supabase.from('subjects').select('*, semesters(id,number,title, academic_spaces(id,title,icon,owner_id,visibility))').eq('id', id!).maybeSingle()) as unknown as (Subject & { semesters: (Pick<Semester, 'id' | 'number' | 'title'> & { academic_spaces: Pick<Space, 'id' | 'title' | 'icon' | 'owner_id' | 'visibility'> | null }) | null }) | null,
   })
