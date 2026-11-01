@@ -43,7 +43,7 @@ export default function CodeViewer({ url, extension }: { url: string; extension:
   if (isLoading) return <div className="p-6"><Spinner label="Loading source" /></div>
   if (error || !data) return <ErrorState error={error} title="Could not display this file" />
   return (
-    <div className="overflow-auto bg-slate-50 p-4 dark:bg-slate-950">
+    <div className="overflow-auto bg-slate-900 p-4 text-slate-100">
       <pre className="hljs-view min-w-max text-[13px] leading-6" tabIndex={0} aria-label="Source code"><code>
         {lines.map((l, i) => (
           <span key={i} className="flex"><span aria-hidden="true" className="w-10 shrink-0 select-none pr-3 text-right text-slate-400">{i + 1}</span><span className="whitespace-pre" dangerouslySetInnerHTML={{ __html: l || ' ' }} /></span>

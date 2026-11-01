@@ -56,9 +56,17 @@ export default function NoteRenderer({ noteId, doc, annotations, canAnnotate, sc
   const readSelection = useCallback((): Sel | null => {
     const ed = editorRef.current
     const wrap = wrapRef.current
-    if (!ed || !wrap) return null
-    const { from, to, empty, $from, $to } = ed.state.selection
-    if (empty || $from.parent !== $to.parent || !$from.parent.isTextblock) return null
+    const sel = window.getSelection()
+    if (!ed || ed.isDestroyed || !wrap || !sel || sel.isCollapsed || !sel.rangeCount) return null
+    const range = sel.getRangeAt(0)
+    const dom = ed.view.dom
+    if (!dom.contains(range.startContainer) || !dom.contains(range.endContainer)) return null
+    // map the DOM selection to document positions (works for non-editable documents and on touch devices)
+    const a = ed.view.posAtDOM(range.startContainer, range.startOffset)
+    const b = ed.view.posAtDOM(range.endContainer, range.endOffset)
+    const from = Math.min(a, b), to = Math.max(a, b)
+    const $from = ed.state.doc.resolve(from), $to = ed.state.doc.resolve(to)
+    if ($from.parent !== $to.parent || !$from.parent.isTextblock) return null
     const blockId = $from.parent.attrs.blockId as string | undefined
     if (!blockId) return null
     const map = blockTextMap($from.parent, $from.start())
@@ -66,9 +74,8 @@ export default function NoteRenderer({ noteId, doc, annotations, canAnnotate, sc
     if (end <= start) return null
     const text = map.text.slice(start, end)
     if (!text.trim()) return null
-    const a = ed.view.coordsAtPos(from), b = ed.view.coordsAtPos(to)
-    const box = wrap.getBoundingClientRect()
-    return { blockId, start, end, text, x: Math.min(Math.max((a.left + b.right) / 2 - box.left, 120), box.width - 120), y: a.top - box.top - 48 }
+    const box = wrap.getBoundingClientRect(), r = range.getBoundingClientRect()
+    return { blockId, start, end, text, x: Math.min(Math.max(r.left + r.width / 2 - box.left, 120), Math.max(box.width - 120, 120)), y: r.top - box.top - 48 }
   }, [])
 
   const editor = useEditor({
@@ -76,10 +83,25 @@ export default function NoteRenderer({ noteId, doc, annotations, canAnnotate, sc
     extensions: [...buildExtensions({ editable: false }), AnnotationHighlights],
     content,
     editorProps: { attributes: { class: 'note-prose', 'aria-label': 'Note content', role: 'article' } },
-    onSelectionUpdate: () => { if (canAnnotate) { setSel(readSelection()); setCommenting(false) } },
   })
   const editorRef = useRef(editor)
   editorRef.current = editor
+
+  // follow the user's text selection (mouse, keyboard and touch all fire `selectionchange`)
+  useEffect(() => {
+    if (!canAnnotate) return
+    let raf = 0
+    const onSel = () => {
+      cancelAnimationFrame(raf)
+      raf = requestAnimationFrame(() => {
+        const tb = wrapRef.current?.querySelector('[role="toolbar"]')
+        if (tb && tb.contains(document.activeElement)) return // typing a comment: keep the toolbar
+        setSel(readSelection())
+      })
+    }
+    document.addEventListener('selectionchange', onSel)
+    return () => { document.removeEventListener('selectionchange', onSel); cancelAnimationFrame(raf) }
+  }, [canAnnotate, readSelection])
 
   // keep content in sync when the note changes
   useEffect(() => { if (editor && !editor.isDestroyed) editor.commands.setContent(content, false) }, [editor, content])

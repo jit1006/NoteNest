@@ -108,7 +108,7 @@ export default function AppShell() {
       <header className="sticky top-0 z-20 flex h-16 items-center gap-3 border-b border-slate-200/70 bg-white/85 px-4 backdrop-blur-xl lg:px-8 dark:border-slate-800 dark:bg-slate-950/85">
         <button type="button" aria-label="Open menu" aria-expanded={drawer} onClick={() => setDrawer(true)} className="btn-ghost h-10 w-10 p-0 lg:hidden"><Menu className="h-5 w-5" aria-hidden="true" /></button>
         <div className="max-w-xl flex-1">
-          <SearchBar value={q} onChange={setQ} onSubmit={(v) => { navigate(`/explore${v ? `?q=${encodeURIComponent(v)}` : ''}`); setQ('') }} placeholder="Search notes and files…" label="Search the library" />
+          <SearchBar value={q} onChange={setQ} onSubmit={(v) => { navigate(`/explore${v ? `?q=${encodeURIComponent(v)}` : ''}`); setQ('') }} placeholder="Search notes and files…" label="Quick search" />
         </div>
         <ThemeToggle />
         <div className="flex items-center gap-2">

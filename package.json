@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit",
     "check:data": "node scripts/check-catalog.mjs",
     "test:logic": "node scripts/test-logic.ts",
-    "test:e2e": "node e2e/smoke.mjs",
+    "test:e2e": "node e2e/v2.mjs",
     "check": "npm run check:data && npm run test:logic && npm run build",
     "pdfs": "python3 tools/generate_pdfs.py && python3 tools/verify_pdfs.py",
     "test:db": "node --test --test-concurrency=2 \"tests/db/*.test.mjs\"",

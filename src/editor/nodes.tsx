@@ -4,10 +4,15 @@ import { Link } from 'react-router-dom'
 import { FileText, ImageOff, Paperclip } from 'lucide-react'
 import { useSignedUrl } from '../api/files'
 import { formatBytes } from '../lib/files'
+import { useSharedAccess } from './SharedAccess'
+import { useSharedFileUrl } from '../api/shared'
 
 /** Image stored as a private file. The document keeps only {resourceId, path}; the URL is signed on demand. */
-export function SignedImg({ path, alt, className = '' }: { path: string | null | undefined; alt?: string; className?: string }) {
-  const { data: url, isError, isLoading } = useSignedUrl(path)
+export function SignedImg({ path, alt, className = '', resourceId }: { path: string | null | undefined; alt?: string; className?: string; resourceId?: string | null }) {
+  const shared = useSharedAccess()
+  const viaStorage = useSignedUrl(shared ? null : path)
+  const viaShare = useSharedFileUrl(shared?.noteId, shared?.token, resourceId ?? undefined)
+  const { data: url, isError, isLoading } = shared ? viaShare : viaStorage
   if (!path || isError) {
     return (
       <span className="inline-flex items-center gap-2 rounded-xl border border-dashed border-slate-300 px-3 py-6 text-sm text-slate-500 dark:border-slate-700">
@@ -22,7 +27,7 @@ export function SignedImg({ path, alt, className = '' }: { path: string | null |
 function ImageView({ node, selected }: NodeViewProps) {
   return (
     <NodeViewWrapper className={`my-4 ${selected ? 'rounded-xl ring-2 ring-brand-500' : ''}`} data-drag-handle>
-      <SignedImg path={node.attrs.path as string | null} alt={node.attrs.alt as string} />
+      <SignedImg path={node.attrs.path as string | null} alt={node.attrs.alt as string} resourceId={node.attrs.resourceId as string | null} />
     </NodeViewWrapper>
   )
 }

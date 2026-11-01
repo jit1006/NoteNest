@@ -91,3 +91,60 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* ───────────── rich text (Tiptap) ───────────── */
+.note-prose { @apply text-[1.0625rem] leading-8 text-slate-800 dark:text-slate-200; overflow-wrap: anywhere; }
+.note-prose > * + * { margin-top: 0.9em; }
+.note-prose h1 { @apply mt-8 text-3xl font-extrabold; }
+.note-prose h2 { @apply mt-7 text-2xl font-bold; }
+.note-prose h3 { @apply mt-6 text-xl font-semibold; }
+.note-prose h1, .note-prose h2, .note-prose h3 { line-height: 1.25; scroll-margin-top: 6rem; }
+.note-prose p { min-height: 1.5em; }
+.note-prose a { @apply font-medium text-brand-600 underline decoration-brand-300 underline-offset-2 hover:text-brand-700 dark:text-brand-300; }
+.note-prose ul { @apply list-disc pl-6; }
+.note-prose ol { @apply list-decimal pl-6; }
+.note-prose li > p { margin: 0; }
+.note-prose li + li { margin-top: 0.25em; }
+.note-prose blockquote { @apply border-l-4 border-brand-300 pl-4 italic text-slate-600 dark:border-brand-500/60 dark:text-slate-400; }
+.note-prose hr { @apply my-8 border-slate-200 dark:border-slate-700; }
+.note-prose code { @apply rounded-md bg-slate-100 px-1.5 py-0.5 font-mono text-[0.9em] text-rose-600 dark:bg-slate-800 dark:text-rose-300; }
+.note-prose pre { @apply overflow-x-auto rounded-xl bg-slate-900 p-4 text-sm leading-6 text-slate-100; }
+.note-prose pre code { @apply bg-transparent p-0 text-inherit dark:bg-transparent dark:text-inherit; font-size: inherit; }
+.note-prose mark { border-radius: 0.25rem; padding: 0 0.15em; color: inherit; }
+.note-prose ul[data-type='taskList'] { @apply list-none pl-1; }
+.note-prose ul[data-type='taskList'] li { @apply flex items-start gap-2; }
+.note-prose ul[data-type='taskList'] li > label { @apply mt-1.5 flex-none select-none; }
+.note-prose ul[data-type='taskList'] li > div { @apply min-w-0 flex-1; }
+.note-prose ul[data-type='taskList'] input { @apply h-4 w-4 cursor-pointer accent-brand-600; }
+.note-prose table { @apply my-4 w-full table-fixed border-collapse overflow-hidden text-sm; }
+.note-prose th, .note-prose td { @apply relative border border-slate-300 px-3 py-2 align-top dark:border-slate-700; }
+.note-prose th { @apply bg-slate-100 text-left font-semibold dark:bg-slate-800; }
+.note-prose .selectedCell::after { content: ''; position: absolute; inset: 0; background: rgb(99 102 241 / 0.18); pointer-events: none; }
+.note-prose .tableWrapper { overflow-x: auto; }
+.note-prose p.is-editor-empty:first-child::before,
+.note-prose p.is-empty::before { content: attr(data-placeholder); float: left; height: 0; pointer-events: none; @apply text-slate-400; }
+.note-prose .ProseMirror-selectednode { @apply rounded-xl outline outline-2 outline-brand-500; }
+
+/* syntax tokens (code blocks always sit on a dark surface) */
+.hljs-comment, .hljs-quote { color: #94a3b8; font-style: italic; }
+.hljs-keyword, .hljs-selector-tag, .hljs-literal, .hljs-doctag { color: #c4b5fd; }
+.hljs-string, .hljs-regexp, .hljs-addition, .hljs-attribute { color: #86efac; }
+.hljs-number, .hljs-symbol, .hljs-bullet, .hljs-meta { color: #fdba74; }
+.hljs-title, .hljs-section, .hljs-title.function_, .hljs-name { color: #7dd3fc; }
+.hljs-type, .hljs-built_in, .hljs-class .hljs-title, .hljs-title.class_ { color: #fde68a; }
+.hljs-variable, .hljs-template-variable, .hljs-attr { color: #fca5a5; }
+.hljs-deletion { color: #fca5a5; }
+.hljs-emphasis { font-style: italic; } .hljs-strong { font-weight: 700; }
+
+/* personal highlights (decorations — never part of the shared document) */
+.annot-hl { border-radius: 0.2em; cursor: pointer; transition: box-shadow 0.15s; }
+.annot-yellow { background: rgb(253 224 71 / 0.5); } .annot-green { background: rgb(134 239 172 / 0.5); }
+.annot-blue { background: rgb(147 197 253 / 0.5); } .annot-pink { background: rgb(249 168 212 / 0.5); } .annot-purple { background: rgb(196 181 253 / 0.55); }
+.dark .annot-yellow { background: rgb(234 179 8 / 0.35); } .dark .annot-green { background: rgb(34 197 94 / 0.3); }
+.dark .annot-blue { background: rgb(59 130 246 / 0.35); } .dark .annot-pink { background: rgb(236 72 153 / 0.3); } .dark .annot-purple { background: rgb(139 92 246 / 0.4); }
+.annot-has-comment { border-bottom: 2px solid rgb(99 102 241); }
+.annot-active { box-shadow: 0 0 0 2px rgb(99 102 241 / 0.6); }
+.block-flash { animation: block-flash 2.2s ease-out; }
+@keyframes block-flash { 0% { background: rgb(250 204 21 / 0.45); } 100% { background: transparent; } }
+.react-pdf__Page { background: white; box-shadow: 0 2px 12px rgb(15 23 42 / 0.15); }
+.react-pdf__Page__textContent { user-select: text; }

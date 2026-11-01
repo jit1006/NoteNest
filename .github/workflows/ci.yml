@@ -12,19 +12,17 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: npm ci --no-audit --no-fund
-      - name: Pure logic tests
+      - name: Pure logic tests (sanitizer, anchors, file validation)
         run: npm run test:logic
       - name: Typecheck and production build
         run: npm run build
         env:
           VITE_SUPABASE_URL: http://127.0.0.1:54321
           VITE_SUPABASE_ANON_KEY: ci-placeholder-anon-key
-      - uses: actions/upload-artifact@v4
-        with: { name: notenest-dist, path: dist }
 
-  backend:
+  full-stack:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -32,7 +30,7 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - uses: supabase/setup-cli@v1
         with: { version: latest }
-      - name: Start local Supabase (Postgres + Auth + Storage + Mailpit) and apply migrations
+      - name: Start local Supabase (Postgres + Auth + Storage + Mailpit) and apply all migrations
         run: supabase start -x studio,imgproxy,vector,logflare,realtime,edge-runtime
       - name: Export connection details
         run: |
@@ -41,13 +39,30 @@ jobs:
             echo "SUPABASE_URL=$API_URL"
             echo "SUPABASE_ANON_KEY=$ANON_KEY"
             echo "SUPABASE_SERVICE_ROLE_KEY=$SERVICE_ROLE_KEY"
-            echo "DB_URL=$DB_URL"
           } >> "$GITHUB_ENV"
-      - name: Database integration tests (RLS, storage, auth)
+      - name: Database integration tests (RLS, storage policies, auth mail)
         run: npm run test:db
-      - name: Dump logs on failure
+      - name: Seed the demo library (migrates the V1 catalog into PostgreSQL + Storage)
+        run: node scripts/seed-demo.mjs
+      - name: Production build against the local backend
+        run: npm run build
+        env:
+          VITE_SUPABASE_URL: ${{ env.SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ env.SUPABASE_ANON_KEY }}
+          VITE_ENABLE_GOOGLE_AUTH: 'true'
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Browser end-to-end tests
+        run: |
+          (cd dist && python3 -m http.server 4173 --bind 127.0.0.1 > /dev/null 2>&1 &)
+          sleep 2
+          BASE_URL=http://127.0.0.1:4173 npm run test:e2e
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with: { name: e2e-screenshots, path: e2e-artifacts, if-no-files-found: ignore }
+      - name: Dump service logs on failure
         if: failure()
         run: |
           supabase status || true
-          docker ps -a || true
-          for c in $(docker ps -aq); do echo "=== $c"; docker logs --tail 60 $c 2>&1 | tail -60; done
+          for c in $(docker ps -q); do echo "=== $(docker inspect --format '{{.Name}}' $c)"; docker logs --tail 40 $c 2>&1 | tail -40; done
