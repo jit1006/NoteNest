@@ -1,0 +1,16 @@
+name: deps-artifact
+on:
+  workflow_dispatch:
+  push:
+    paths: ['package.json']
+jobs:
+  deps:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm install --no-audit --no-fund
+      - run: tar czf nm.tgz node_modules package-lock.json
+      - uses: actions/upload-artifact@v4
+        with: { name: node-modules, path: nm.tgz, retention-days: 3, compression-level: 0 }
