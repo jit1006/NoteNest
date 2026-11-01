@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useQueryClient } from '@tanstack/react-query'
 import { Copy, EyeOff, Globe2, Link2, Lock, RefreshCw } from 'lucide-react'
 import Modal from '../ui/Modal'
@@ -35,15 +35,18 @@ export default function ShareDialog({ open, onClose, kind, id, title, visibility
   const updateNote = useUpdateNoteMeta()
   const updateResource = useUpdateResource()
   const [busy, setBusy] = useState(false)
+  const [sel, setSel] = useState<Visibility>(visibility)   // optimistic selection, reverted if the server refuses
+  useEffect(() => setSel(visibility), [visibility])
   const link = appLink(`/shared/${kind}/${id}?token=${shareToken}`)
 
   const change = async (v: Visibility) => {
     if (v === visibility || !canChange) return
+    setSel(v)
     try {
       if (kind === 'note') await updateNote.mutateAsync({ id, visibility: v })
       else await updateResource.mutateAsync({ id, visibility: v })
       toast.success(`Now ${v}`)
-    } catch (e) { toast.error(friendlyMessage(e as Error)) }
+    } catch (e) { setSel(visibility); toast.error(friendlyMessage(e as Error)) }
   }
 
   const rotate = async () => {
@@ -66,8 +69,8 @@ export default function ShareDialog({ open, onClose, kind, id, title, visibility
       <fieldset className="space-y-2" disabled={!canChange}>
         <legend className="sr-only">Visibility</legend>
         {OPTIONS.map(({ v, icon: Icon, title: t, text }) => (
-          <label key={v} className={`flex cursor-pointer gap-3 rounded-xl border p-3 transition ${visibility === v ? 'border-brand-500 bg-brand-50 dark:bg-brand-500/10' : 'border-slate-200 hover:border-brand-300 dark:border-slate-700'}`}>
-            <input type="radio" name="visibility" value={v} checked={visibility === v} onChange={() => void change(v)} className="mt-1 accent-brand-600" />
+          <label key={v} className={`flex cursor-pointer gap-3 rounded-xl border p-3 transition ${sel === v ? 'border-brand-500 bg-brand-50 dark:bg-brand-500/10' : 'border-slate-200 hover:border-brand-300 dark:border-slate-700'}`}>
+            <input type="radio" name="visibility" value={v} checked={sel === v} onChange={() => void change(v)} className="mt-1 accent-brand-600" />
             <span className="min-w-0">
               <span className="flex items-center gap-2 text-sm font-semibold text-slate-900 dark:text-white"><Icon className="h-4 w-4" aria-hidden="true" />{t}</span>
               <span className="mt-0.5 block text-xs text-slate-500 dark:text-slate-400">{text}</span>

@@ -7,17 +7,7 @@
     <meta name="description" content="NoteNest — a smart class notes library. Explore subjects by semester, search notes, download PDFs, practise with model papers and plan your study. Your Semester. Your Notes. One Place." />
     <meta name="theme-color" content="#f8fafc" />
     <title>NoteNest — Your Semester. Your Notes. One Place.</title>
-    <script>
-      // Apply the saved theme before first paint to avoid a flash of the wrong theme.
-      (function () {
-        try {
-          var saved = JSON.parse(localStorage.getItem('notenest:theme:v1'));
-          var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-          if (dark) document.documentElement.classList.add('dark');
-          document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
-        } catch (e) {}
-      })();
-    </script>
+    <script src="./theme-init.js"></script>
   </head>
   <body>
     <div id="root"></div>

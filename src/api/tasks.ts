@@ -26,7 +26,15 @@ export function useToggleTask() {
   const qc = useQueryClient()
   return useMutation({
     mutationFn: async (t: StudyTask) => unwrap(await supabase.from('study_tasks').update({ done: !t.done }).eq('id', t.id).select().single()),
-    onSuccess: () => qc.invalidateQueries({ queryKey: ['tasks'] }),
+    // optimistic: tick the box immediately, roll back if the server refuses
+    onMutate: async (t) => {
+      await qc.cancelQueries({ queryKey: ['tasks'] })
+      const prev = qc.getQueriesData<StudyTask[]>({ queryKey: ['tasks'] })
+      qc.setQueriesData<StudyTask[]>({ queryKey: ['tasks'] }, (old) => old?.map((x) => (x.id === t.id ? { ...x, done: !x.done } : x)))
+      return { prev }
+    },
+    onError: (_e, _t, ctx) => ctx?.prev.forEach(([key, data]) => qc.setQueryData(key, data)),
+    onSettled: () => qc.invalidateQueries({ queryKey: ['tasks'] }),
   })
 }
 

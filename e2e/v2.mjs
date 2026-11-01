@@ -19,6 +19,7 @@ mkdirSync(SHOTS, { recursive: true })
 const admin = createClient(API, process.env.SUPABASE_SERVICE_ROLE_KEY, { auth: { persistSession: false, autoRefreshToken: false } })
 const results = []
 const problems = []
+const livePages = new Set()
 // Deliberate negative tests (wrong password, duplicate link, forbidden reads) produce 4xx; 5xx are always problems.
 const IGNORE = [/favicon/, /Failed to load resource/]
 
@@ -27,7 +28,22 @@ const eq = (a, b, msg) => { if (a !== b) throw new Error(`${msg || 'expected equ
 async function check(name, fn) {
   const t0 = Date.now()
   try { await fn(); results.push({ name, ok: true }); console.log(`  PASS  ${name} (${((Date.now() - t0) / 1000).toFixed(1)}s)`) }
-  catch (e) { results.push({ name, ok: false, err: e }); console.log(`  FAIL  ${name}\n        ${String(e.message).split('\n').slice(0, 3).join('\n        ')}`) }
+  catch (e) {
+    results.push({ name, ok: false, err: e })
+    console.log(`  FAIL  ${name}\n        ${String(e.message).split('\n').slice(0, 4).join('\n        ')}`)
+    let i = 0
+    for (const pg of livePages) {              // diagnostics: where was each browser when it failed?
+      try {
+        const text = (await pg.evaluate(() => document.body.innerText)).replace(/\s+/g, ' ').slice(0, 350)
+        console.log(`        [page ${i}] ${pg.url()}\n        text: ${text}`)
+        await pg.screenshot({ path: join(SHOTS, `FAIL-${results.length}-${i}.png`) })
+      } catch { /* page already closed */ }
+      i++
+    }
+  } finally {
+    for (const pg of livePages) await pg.context().close().catch(() => {})
+    livePages.clear()
+  }
 }
 
 const browser = await chromium.launch({ headless: true, executablePath: process.env.CHROME_PATH || undefined, args: ['--no-sandbox'] })
@@ -35,6 +51,7 @@ const browser = await chromium.launch({ headless: true, executablePath: process.
 async function newCtx(opts = {}) {
   const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 }, acceptDownloads: true, ...opts })
   const page = await ctx.newPage()
+  livePages.add(page)
   page.on('pageerror', (e) => problems.push(`pageerror: ${e.message}`))
   page.on('console', (m) => { if (m.type() === 'error' && !IGNORE.some((re) => re.test(m.text()))) problems.push(`console.error: ${m.text().slice(0, 200)} @ ${page.url()}`) })
   page.on('requestfailed', (r) => { const t = r.failure()?.errorText || ''; if (!t.includes('ERR_ABORTED') && !r.url().startsWith('chrome-extension://')) problems.push(`requestfailed (${t}): ${r.url()}`) })
@@ -174,6 +191,7 @@ await check('password reset: email → new password → old password rejected', 
   await page.getByRole('button', { name: 'Update password' }).click()
   await page.waitForURL(/#\/dashboard/)
   await page.getByRole('button', { name: 'Sign out' }).click()
+  await page.waitForURL(/#\/$/)
   await go(page, '/login')
   await page.getByLabel('Email', { exact: true }).fill(u.email)
   await page.getByLabel('Password', { exact: true }).fill(PASSWORD)
@@ -507,7 +525,10 @@ await check('mobile: navigation drawer, no horizontal overflow, editor toolbar r
   const overflow = () => page.evaluate(() => document.documentElement.scrollWidth - 375)
   for (const route of ['/dashboard', '/explore', '/files', '/bookmarks', '/planner', '/settings', `/notes/${state.publicNote}`, `/notes/${state.publicNote}/edit`, '/references']) {
     await go(page, route); await page.getByRole('heading').first().waitFor(); await page.waitForTimeout(250)
-    ok((await overflow()) <= 1, `horizontal overflow on ${route}: ${await overflow()}px`)
+    if ((await overflow()) > 1) {
+      const culprits = await page.evaluate(() => [...document.querySelectorAll('body *')].filter((e) => e.getBoundingClientRect().right > 376 && getComputedStyle(e).position !== 'fixed').slice(0, 6).map((e) => `${e.tagName.toLowerCase()}.${String(e.className).split(' ').slice(0, 3).join('.')} right=${Math.round(e.getBoundingClientRect().right)}`))
+      throw new Error(`horizontal overflow on ${route}: ${await overflow()}px; wide elements: ${culprits.join(' | ')}`)
+    }
   }
   await go(page, '/dashboard')
   await page.getByRole('button', { name: 'Open menu' }).click()
