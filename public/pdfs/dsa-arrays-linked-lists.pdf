@@ -1,0 +1,104 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 4717 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  STUDY NOTES  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (Complexity, Arrays, Stacks and Linked) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 724.89 Td (Lists) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Data Structures and Algorithms  -  Unit 1 - Linear data structures) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (Measuring efficiency) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 623.89 Td (Big-O notation describes how running time or memory grows with input size n, ignoring constants.) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 608.89 Td (Common classes from fastest to slowest: O\(1\), O\(log n\), O\(n\), O\(n log n\), O\(n^2\), O\(2^n\).) Tj ET
+0.945 0.953 0.980 rg 54.00 525.89 487.28 72.00 re f
+0.310 0.270 0.900 rg 54.00 525.89 3.00 72.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 585.89 Td (def linear_search\(a, x\):        # O\(n\)) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 573.89 Td (    for i, v in enumerate\(a\):) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 561.89 Td (        if v == x:) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 549.89 Td (            return i) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 537.89 Td (    return -1) Tj ET
+0.490 0.230 0.930 rg 54.00 497.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 501.89 Td (Arrays) Tj ET
+0.490 0.230 0.930 rg 59.00 482.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 479.89 Td (Contiguous memory; access by index is O\(1\).) Tj ET
+0.490 0.230 0.930 rg 59.00 465.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 462.89 Td (Insert or delete in the middle is O\(n\) because elements shift.) Tj ET
+0.490 0.230 0.930 rg 59.00 448.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 445.89 Td (Binary search needs a sorted array and runs in O\(log n\).) Tj ET
+0.490 0.230 0.930 rg 54.00 410.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 414.89 Td (Linked lists) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 392.89 Td (A singly linked list stores nodes with a value and a next pointer. Insertion at the head is O\(1\); searching) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 377.89 Td (is O\(n\). A doubly linked list adds a prev pointer, making deletion of a known node O\(1\).) Tj ET
+0.945 0.953 0.980 rg 54.00 246.89 487.28 120.00 re f
+0.310 0.270 0.900 rg 54.00 246.89 3.00 120.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 354.89 Td (class Node:) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 342.89 Td (    def __init__\(self, val, nxt=None\):) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 330.89 Td (        self.val, self.next = val, nxt) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 318.89 Td () Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 306.89 Td (def reverse\(head\):) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 294.89 Td (    prev = None) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 282.89 Td (    while head:) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 270.89 Td (        head.next, prev, head = prev, head, head.next) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 258.89 Td (    return prev) Tj ET
+0.490 0.230 0.930 rg 54.00 218.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 222.89 Td (Stack and queue) Tj ET
+0.490 0.230 0.930 rg 59.00 203.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 200.89 Td (Stack - LIFO. push, pop, peek in O\(1\). Used for function calls, undo, bracket matching, expression) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 185.89 Td (evaluation.) Tj ET
+0.490 0.230 0.930 rg 59.00 171.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 168.89 Td (Queue - FIFO. enqueue, dequeue in O\(1\) with a linked list or circular buffer. Used in scheduling and) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 153.89 Td (BFS.) Tj ET
+0.930 0.920 1.000 rg 54.00 100.89 487.28 42.00 re f
+0.490 0.230 0.930 rg 54.00 100.89 3.00 42.00 re f
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 129.89 Td (Exam tip: when asked to evaluate a postfix expression, push operands and, on each operator, pop two) Tj ET
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 115.89 Td (values \(right operand first\), apply the operator and push the result.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 1) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (Complexity, Arrays, Stacks and Linked Lists) /Author (NoteNest demo content) /Subject (Data Structures and Algorithms) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000140 00000 n 
+0000000237 00000 n 
+0000000339 00000 n 
+0000000434 00000 n 
+0000000539 00000 n 
+0000005308 00000 n 
+0000005470 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+5661
+%%EOF

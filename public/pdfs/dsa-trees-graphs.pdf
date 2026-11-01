@@ -1,0 +1,106 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 5119 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  STUDY NOTES  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (Trees, Graphs, Sorting and Searching) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Data Structures and Algorithms  -  Units 2-3 - Non-linear structures and algorithms) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (Binary trees and BSTs) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 623.89 Td (A binary tree node has at most two children. In a binary search tree \(BST\) every key in the left subtree is) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 608.89 Td (smaller and every key in the right subtree is larger, so search, insert and delete take O\(h\) where h is the) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 593.89 Td (height - O\(log n\) when balanced, O\(n\) when skewed.) Tj ET
+0.490 0.230 0.930 rg 59.00 577.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 574.89 Td (Inorder \(L, root, R\) of a BST visits keys in sorted order.) Tj ET
+0.490 0.230 0.930 rg 59.00 560.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 557.89 Td (Preorder \(root, L, R\) is used to copy a tree; postorder \(L, R, root\) to delete one.) Tj ET
+0.490 0.230 0.930 rg 59.00 543.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 540.89 Td (Level order uses a queue.) Tj ET
+0.490 0.230 0.930 rg 59.00 526.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 523.89 Td (AVL and red-black trees rotate to stay balanced.) Tj ET
+0.490 0.230 0.930 rg 54.00 488.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 492.89 Td (Heaps) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 470.89 Td (A binary heap is a complete binary tree stored in an array where each parent is <= its children) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 455.89 Td (\(min-heap\). Insert and extract-min cost O\(log n\); building a heap from n items costs O\(n\). Heaps power) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 440.89 Td (priority queues and heap sort.) Tj ET
+0.490 0.230 0.930 rg 54.00 407.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 411.89 Td (Graphs) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 389.89 Td (A graph G = \(V, E\) can be stored as an adjacency matrix \(O\(V^2\) space, O\(1\) edge check\) or adjacency) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 374.89 Td (lists \(O\(V+E\) space\).) Tj ET
+0.945 0.953 0.980 rg 54.00 243.89 487.28 120.00 re f
+0.310 0.270 0.900 rg 54.00 243.89 3.00 120.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 351.89 Td (from collections import deque) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 339.89 Td (def bfs\(g, s\):) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 327.89 Td (    seen, q = {s}, deque\([s]\)) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 315.89 Td (    while q:) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 303.89 Td (        u = q.popleft\(\)) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 291.89 Td (        for v in g[u]:) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 279.89 Td (            if v not in seen:) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 267.89 Td (                seen.add\(v\); q.append\(v\)) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 255.89 Td (    return seen) Tj ET
+0.490 0.230 0.930 rg 59.00 232.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 229.89 Td (BFS finds shortest paths in unweighted graphs; DFS is used for cycle detection and topological sort.) Tj ET
+0.490 0.230 0.930 rg 59.00 215.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 212.89 Td (Dijkstra finds shortest paths with non-negative weights in O\(\(V+E\) log V\) using a heap.) Tj ET
+0.490 0.230 0.930 rg 59.00 198.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 195.89 Td (Kruskal and Prim build minimum spanning trees.) Tj ET
+0.490 0.230 0.930 rg 54.00 160.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 164.89 Td (Sorting) Tj ET
+0.490 0.230 0.930 rg 59.00 145.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 142.89 Td (Bubble, selection, insertion: O\(n^2\). Insertion sort is fast on nearly sorted data.) Tj ET
+0.490 0.230 0.930 rg 59.00 128.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 125.89 Td (Merge sort: O\(n log n\) always, stable, needs O\(n\) extra space.) Tj ET
+0.490 0.230 0.930 rg 59.00 111.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 108.89 Td (Quick sort: O\(n log n\) average, O\(n^2\) worst case, in-place.) Tj ET
+0.490 0.230 0.930 rg 59.00 94.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 91.89 Td (Heap sort: O\(n log n\), in-place, not stable.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 1) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (Trees, Graphs, Sorting and Searching) /Author (NoteNest demo content) /Subject (Data Structures and Algorithms) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000140 00000 n 
+0000000237 00000 n 
+0000000339 00000 n 
+0000000434 00000 n 
+0000000539 00000 n 
+0000005710 00000 n 
+0000005872 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+6056
+%%EOF

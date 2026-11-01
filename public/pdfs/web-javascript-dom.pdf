@@ -1,0 +1,105 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 4732 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  STUDY NOTES  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (JavaScript, the DOM and Asynchronous) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 724.89 Td (Code) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Web Development  -  Units 2-3 - Interactivity) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (Language essentials) Tj ET
+0.490 0.230 0.930 rg 59.00 626.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 623.89 Td (Use const by default and let when reassignment is needed; avoid var.) Tj ET
+0.490 0.230 0.930 rg 59.00 609.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 606.89 Td (Functions are first-class values; arrow functions keep the surrounding this.) Tj ET
+0.490 0.230 0.930 rg 59.00 592.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 589.89 Td (Array methods map, filter and reduce express data transformations clearly.) Tj ET
+0.490 0.230 0.930 rg 59.00 575.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 572.89 Td (Use === instead of == to avoid surprising type coercion.) Tj ET
+0.945 0.953 0.980 rg 54.00 511.89 487.28 48.00 re f
+0.310 0.270 0.900 rg 54.00 511.89 3.00 48.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 547.89 Td (const notes = [{ t: 'ER model', sem: 4 }, { t: 'Sorting', sem: 3 }];) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 535.89 Td (const sem4 = notes.filter\(n => n.sem === 4\).map\(n => n.t\);) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 523.89 Td (console.log\(sem4\);   // ['ER model']) Tj ET
+0.490 0.230 0.930 rg 54.00 483.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 487.89 Td (The DOM) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 465.89 Td (The Document Object Model is a tree of nodes representing the page. JavaScript selects nodes,) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 450.89 Td (changes them and reacts to events.) Tj ET
+0.945 0.953 0.980 rg 54.00 367.89 487.28 72.00 re f
+0.310 0.270 0.900 rg 54.00 367.89 3.00 72.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 427.89 Td (const btn = document.querySelector\('#save'\);) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 415.89 Td (btn.addEventListener\('click', \(\) => {) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 403.89 Td (  localStorage.setItem\('saved', 'yes'\);) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 391.89 Td (  btn.textContent = 'Saved';) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 379.89 Td (}\);) Tj ET
+0.490 0.230 0.930 rg 54.00 339.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 343.89 Td (Asynchronous JavaScript) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 321.89 Td (JavaScript runs on one thread with an event loop. Slow work such as network requests returns a) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 306.89 Td (Promise. async/await makes promise code read top-to-bottom.) Tj ET
+0.945 0.953 0.980 rg 54.00 199.89 487.28 96.00 re f
+0.310 0.270 0.900 rg 54.00 199.89 3.00 96.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 283.89 Td (async function load\(\) {) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 271.89 Td (  try {) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 259.89 Td (    const res = await fetch\('/data.json'\);) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 247.89 Td (    if \(!res.ok\) throw new Error\(res.status\);) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 235.89 Td (    return await res.json\(\);) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 223.89 Td (  } catch \(err\) { console.error\(err\); }) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 211.89 Td (}) Tj ET
+0.490 0.230 0.930 rg 54.00 171.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 175.89 Td (Browser storage) Tj ET
+0.490 0.230 0.930 rg 59.00 156.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 153.89 Td (localStorage keeps strings for the same origin until cleared \(about 5 MB\).) Tj ET
+0.490 0.230 0.930 rg 59.00 139.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 136.89 Td (sessionStorage is cleared when the tab closes.) Tj ET
+0.490 0.230 0.930 rg 59.00 122.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 119.89 Td (Always JSON.parse inside try/catch because stored data can be corrupted.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 1) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (JavaScript, the DOM and Asynchronous Code) /Author (NoteNest demo content) /Subject (Web Development) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000140 00000 n 
+0000000237 00000 n 
+0000000339 00000 n 
+0000000434 00000 n 
+0000000539 00000 n 
+0000005323 00000 n 
+0000005485 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+5659
+%%EOF

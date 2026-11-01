@@ -1,0 +1,95 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 4424 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  STUDY NOTES  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (Intelligent Agents and Search Strategies) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Artificial Intelligence  -  Unit 1-2 - Problem solving) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (What is AI?) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 623.89 Td (Artificial intelligence studies how to build systems that perceive their environment and take actions that) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 608.89 Td (maximize their chance of achieving goals. Typical areas include search, knowledge representation,) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 593.89 Td (machine learning, natural language processing and computer vision.) Tj ET
+0.490 0.230 0.930 rg 54.00 560.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 564.89 Td (Intelligent agents) Tj ET
+0.490 0.230 0.930 rg 59.00 545.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 542.89 Td (An agent maps percepts from sensors to actions on actuators.) Tj ET
+0.490 0.230 0.930 rg 59.00 528.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 525.89 Td (Types: simple reflex, model-based reflex, goal-based, utility-based and learning agents.) Tj ET
+0.490 0.230 0.930 rg 59.00 511.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 508.89 Td (Environments are described as observable or partial, deterministic or stochastic, static or dynamic,) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 493.89 Td (discrete or continuous.) Tj ET
+0.490 0.230 0.930 rg 54.00 458.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 462.89 Td (State-space search) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 440.89 Td (Problems are formulated with an initial state, actions, a transition model, a goal test and a path cost.) Tj ET
+0.490 0.230 0.930 rg 59.00 424.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 421.89 Td (BFS: complete, optimal for equal step costs, O\(b^d\) memory.) Tj ET
+0.490 0.230 0.930 rg 59.00 407.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 404.89 Td (DFS: low memory O\(bm\) but not complete on infinite or cyclic spaces.) Tj ET
+0.490 0.230 0.930 rg 59.00 390.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 387.89 Td (Uniform-cost search: expands the cheapest path first; optimal.) Tj ET
+0.490 0.230 0.930 rg 59.00 373.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 370.89 Td (Iterative deepening: DFS memory with BFS completeness.) Tj ET
+0.490 0.230 0.930 rg 54.00 335.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 339.89 Td (Informed search and A*) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 317.89 Td (A heuristic h\(n\) estimates the cost from node n to the goal. A* expands the node with the lowest f\(n\) =) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 302.89 Td (g\(n\) + h\(n\). It is optimal when h is admissible, meaning it never overestimates the real cost.) Tj ET
+0.930 0.920 1.000 rg 54.00 251.89 487.28 42.00 re f
+0.490 0.230 0.930 rg 54.00 251.89 3.00 42.00 re f
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 280.89 Td (8-puzzle example: the number of misplaced tiles and the Manhattan distance are both admissible) Tj ET
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 266.89 Td (heuristics; Manhattan distance is more informed, so A* expands fewer nodes.) Tj ET
+0.490 0.230 0.930 rg 54.00 219.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 223.89 Td (Adversarial search) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 201.89 Td (Minimax picks the move that maximizes the player's worst-case outcome in two-player games.) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 186.89 Td (Alpha-beta pruning skips branches that cannot influence the decision, giving the same result with far) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 171.89 Td (fewer evaluations.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 1) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (Intelligent Agents and Search Strategies) /Author (NoteNest demo content) /Subject (Artificial Intelligence) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000140 00000 n 
+0000000237 00000 n 
+0000000339 00000 n 
+0000000434 00000 n 
+0000000539 00000 n 
+0000005015 00000 n 
+0000005177 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+5358
+%%EOF

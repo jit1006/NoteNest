@@ -1,0 +1,135 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 2 /Kids [8 0 R 10 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 5364 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  STUDY NOTES  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (ER Model and Relational Model) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Database Management Systems  -  Unit 1 - Data modelling fundamentals) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (Why databases?) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 623.89 Td (A database management system \(DBMS\) stores shared data in a structured way and gives applications) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 608.89 Td (safe, concurrent access to it. Compared with plain files, a DBMS reduces redundancy, enforces integrity) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 593.89 Td (rules, supports transactions and separates how data is stored from how it is used \(data independence\).) Tj ET
+0.490 0.230 0.930 rg 54.00 560.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 564.89 Td (Entity-Relationship \(ER\) model) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 542.89 Td (The ER model describes a system as entities, attributes and relationships before any tables are) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 527.89 Td (designed.) Tj ET
+0.490 0.230 0.930 rg 59.00 511.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 508.89 Td (Entity: a distinguishable thing, e.g. Student, Course. A weak entity cannot be identified without its) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 493.89 Td (owner entity.) Tj ET
+0.490 0.230 0.930 rg 59.00 479.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 476.89 Td (Attribute: a property of an entity. Types: simple, composite \(Name = First + Last\), multivalued) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 461.89 Td (\(Phone\), derived \(Age from DateOfBirth\).) Tj ET
+0.490 0.230 0.930 rg 59.00 447.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 444.89 Td (Relationship: an association between entities, e.g. Student ENROLLS_IN Course.) Tj ET
+0.490 0.230 0.930 rg 59.00 430.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 427.89 Td (Cardinality: 1:1, 1:N, M:N. Participation: total \(every instance must take part\) or partial.) Tj ET
+0.930 0.920 1.000 rg 54.00 374.89 487.28 42.00 re f
+0.490 0.230 0.930 rg 54.00 374.89 3.00 42.00 re f
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 403.89 Td (Worked example: a Student may enrol in many Courses and a Course has many Students, so) Tj ET
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 389.89 Td (ENROLLS_IN is M:N. It becomes its own table holding both keys.) Tj ET
+0.490 0.230 0.930 rg 54.00 342.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 346.89 Td (Mapping ER to relational tables) Tj ET
+0.490 0.230 0.930 rg 59.00 327.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 324.89 Td (Each strong entity becomes a table; the key attribute becomes the primary key.) Tj ET
+0.490 0.230 0.930 rg 59.00 310.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 307.89 Td (A 1:N relationship adds the key of the '1' side as a foreign key on the 'N' side.) Tj ET
+0.490 0.230 0.930 rg 59.00 293.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 290.89 Td (An M:N relationship becomes a new table whose primary key combines both foreign keys.) Tj ET
+0.490 0.230 0.930 rg 59.00 276.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 273.89 Td (A multivalued attribute becomes a separate table referencing the entity.) Tj ET
+0.490 0.230 0.930 rg 54.00 238.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 242.89 Td (Keys) Tj ET
+0.490 0.230 0.930 rg 59.00 223.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 220.89 Td (Super key: any set of attributes that uniquely identifies a row.) Tj ET
+0.490 0.230 0.930 rg 59.00 206.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 203.89 Td (Candidate key: a minimal super key. Primary key: the candidate key chosen as the main identifier.) Tj ET
+0.490 0.230 0.930 rg 59.00 189.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 186.89 Td (Foreign key: attribute\(s\) referencing a primary key in another table - this enforces referential integrity.) Tj ET
+0.945 0.953 0.980 rg 54.00 77.89 487.28 96.00 re f
+0.310 0.270 0.900 rg 54.00 77.89 3.00 96.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 161.89 Td (CREATE TABLE Student \() Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 149.89 Td (  roll_no   INT PRIMARY KEY,) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 137.89 Td (  name      VARCHAR\(60\) NOT NULL,) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 125.89 Td (  email     VARCHAR\(80\) UNIQUE) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 113.89 Td (\);) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 101.89 Td (CREATE TABLE Enrollment \() Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 89.89 Td (  roll_no   INT REFERENCES Student\(roll_no\),) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 1456 >>
+stream
+0.945 0.953 0.980 rg 54.00 747.89 487.28 48.00 re f
+0.310 0.270 0.900 rg 54.00 747.89 3.00 48.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 783.89 Td (  course_id INT REFERENCES Course\(course_id\),) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 771.89 Td (  PRIMARY KEY \(roll_no, course_id\)) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 759.89 Td (\);) Tj ET
+0.490 0.230 0.930 rg 54.00 719.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 723.89 Td (Relational algebra in one minute) Tj ET
+0.490 0.230 0.930 rg 59.00 704.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 701.89 Td (Selection \(sigma\) picks rows that satisfy a condition.) Tj ET
+0.490 0.230 0.930 rg 59.00 687.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 684.89 Td (Projection \(pi\) picks columns and removes duplicates.) Tj ET
+0.490 0.230 0.930 rg 59.00 670.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 667.89 Td (Union, intersection and difference need union-compatible relations.) Tj ET
+0.490 0.230 0.930 rg 59.00 653.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 650.89 Td (Join combines related rows; natural join matches on equal common attributes.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 2 of 2) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Title (ER Model and Relational Model) /Author (NoteNest demo content) /Subject (Database Management Systems) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000147 00000 n 
+0000000244 00000 n 
+0000000346 00000 n 
+0000000441 00000 n 
+0000000546 00000 n 
+0000005962 00000 n 
+0000006124 00000 n 
+0000007632 00000 n 
+0000007795 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R /Info 11 0 R >>
+startxref
+7970
+%%EOF

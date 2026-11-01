@@ -1,0 +1,96 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 4197 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  STUDY NOTES  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (Network Models, Data Link and IP) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 724.89 Td (Addressing) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Computer Networks  -  Units 1-2 - Foundations) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (Why layers?) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 623.89 Td (Layering splits the complex job of communication into smaller services. Each layer talks to the layer) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 608.89 Td (above and below through interfaces and to its peer on the other host through a protocol.) Tj ET
+0.490 0.230 0.930 rg 54.00 575.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 579.89 Td (OSI vs TCP/IP) Tj ET
+0.945 0.953 0.980 rg 54.00 457.89 487.28 108.00 re f
+0.310 0.270 0.900 rg 54.00 457.89 3.00 108.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 553.89 Td (OSI layer        TCP/IP layer    Examples) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 541.89 Td (7 Application    Application     HTTP, DNS, SMTP) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 529.89 Td (6 Presentation   Application     TLS, encoding) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 517.89 Td (5 Session        Application     sessions) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 505.89 Td (4 Transport      Transport       TCP, UDP) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 493.89 Td (3 Network        Internet        IP, ICMP) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 481.89 Td (2 Data link      Link            Ethernet, Wi-Fi) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 469.89 Td (1 Physical       Link            cables, radio) Tj ET
+0.490 0.230 0.930 rg 54.00 429.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 433.89 Td (Data link layer) Tj ET
+0.490 0.230 0.930 rg 59.00 414.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 411.89 Td (Framing, MAC addressing \(48-bit\), error detection with CRC.) Tj ET
+0.490 0.230 0.930 rg 59.00 397.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 394.89 Td (Flow control: stop-and-wait, sliding window \(Go-Back-N, Selective Repeat\).) Tj ET
+0.490 0.230 0.930 rg 59.00 380.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 377.89 Td (Switches forward frames using a MAC address table learned from source addresses.) Tj ET
+0.490 0.230 0.930 rg 54.00 342.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 346.89 Td (IPv4 addressing and subnetting) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 324.89 Td (An IPv4 address has 32 bits written as four decimal octets. CIDR notation a.b.c.d/n means the first n bits) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 309.89 Td (identify the network.) Tj ET
+0.930 0.920 1.000 rg 54.00 258.89 487.28 42.00 re f
+0.490 0.230 0.930 rg 54.00 258.89 3.00 42.00 re f
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 287.89 Td (Example: 192.168.10.0/26 -> 6 host bits, 2^6 = 64 addresses, 62 usable hosts \(minus network and) Tj ET
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 273.89 Td (broadcast\). Subnet mask 255.255.255.192; the next subnet starts at 192.168.10.64.) Tj ET
+0.490 0.230 0.930 rg 59.00 243.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 240.89 Td (Private ranges: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16.) Tj ET
+0.490 0.230 0.930 rg 59.00 226.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 223.89 Td (NAT lets many private hosts share one public address.) Tj ET
+0.490 0.230 0.930 rg 59.00 209.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 206.89 Td (IPv6 uses 128-bit addresses to solve address exhaustion.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 1) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (Network Models, Data Link and IP Addressing) /Author (NoteNest demo content) /Subject (Computer Networks) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000140 00000 n 
+0000000237 00000 n 
+0000000339 00000 n 
+0000000434 00000 n 
+0000000539 00000 n 
+0000004788 00000 n 
+0000004950 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+5128
+%%EOF

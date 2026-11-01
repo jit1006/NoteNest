@@ -1,0 +1,120 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 2 /Kids [8 0 R 10 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 5013 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  STUDY NOTES  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (Memory Management, Virtual Memory and) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 724.89 Td (Deadlocks) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Operating Systems  -  Units 3-4 - Memory and resources) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (Paging) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 623.89 Td (Paging splits logical memory into fixed-size pages and physical memory into frames of the same size. A) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 608.89 Td (page table maps page numbers to frame numbers, which removes external fragmentation \(internal) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 593.89 Td (fragmentation can remain in the last page\).) Tj ET
+0.945 0.953 0.980 rg 54.00 534.89 487.28 48.00 re f
+0.310 0.270 0.900 rg 54.00 534.89 3.00 48.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 570.89 Td (logical address = \(page number p, offset d\)) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 558.89 Td (physical address = frame\(p\) * page_size + d) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 546.89 Td (page size 4 KB -> offset uses 12 bits) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 520.89 Td (A Translation Lookaside Buffer \(TLB\) caches recent translations. Effective access time = hit ratio * \(TLB) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 505.89 Td (+ memory\) + miss ratio * \(TLB + 2 * memory\).) Tj ET
+0.490 0.230 0.930 rg 54.00 472.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 476.89 Td (Virtual memory and page replacement) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 454.89 Td (Demand paging loads a page only when it is referenced. A page fault occurs when the page is not in) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 439.89 Td (memory and must be fetched from disk.) Tj ET
+0.490 0.230 0.930 rg 59.00 423.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 420.89 Td (FIFO: evict the oldest page; may show Belady's anomaly.) Tj ET
+0.490 0.230 0.930 rg 59.00 406.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 403.89 Td (Optimal: evict the page not needed for the longest time \(theoretical benchmark\).) Tj ET
+0.490 0.230 0.930 rg 59.00 389.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 386.89 Td (LRU: evict the least recently used page; a good practical approximation of optimal.) Tj ET
+0.490 0.230 0.930 rg 59.00 372.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 369.89 Td (Thrashing: the system spends more time paging than executing; reduce multiprogramming or use) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 354.89 Td (the working-set model.) Tj ET
+0.490 0.230 0.930 rg 54.00 319.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 323.89 Td (Deadlocks) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 301.89 Td (A deadlock is a set of processes each waiting for a resource held by another. It needs all four Coffman) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 286.89 Td (conditions simultaneously:) Tj ET
+0.490 0.230 0.930 rg 59.00 270.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 267.89 Td (Mutual exclusion - a resource is held by one process at a time.) Tj ET
+0.490 0.230 0.930 rg 59.00 253.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 250.89 Td (Hold and wait - a process holds resources while waiting for more.) Tj ET
+0.490 0.230 0.930 rg 59.00 236.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 233.89 Td (No preemption - resources cannot be forcibly taken.) Tj ET
+0.490 0.230 0.930 rg 59.00 219.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 216.89 Td (Circular wait - a cycle of processes each waiting for the next.) Tj ET
+0.490 0.230 0.930 rg 54.00 181.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 185.89 Td (Handling deadlocks) Tj ET
+0.490 0.230 0.930 rg 59.00 166.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 163.89 Td (Prevention: break at least one Coffman condition, e.g. order resources to avoid circular wait.) Tj ET
+0.490 0.230 0.930 rg 59.00 149.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 146.89 Td (Avoidance: Banker's algorithm grants a request only if the system stays in a safe state.) Tj ET
+0.490 0.230 0.930 rg 59.00 132.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 129.89 Td (Detection and recovery: build a wait-for graph, then terminate or roll back processes.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 630 >>
+stream
+0.930 0.920 1.000 rg 54.00 755.89 487.28 42.00 re f
+0.490 0.230 0.930 rg 54.00 755.89 3.00 42.00 re f
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 784.89 Td (Safe state means there is some order in which every process can finish using the currently available) Tj ET
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 770.89 Td (resources plus those released by earlier processes.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 2 of 2) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Title (Memory Management, Virtual Memory and Deadlocks) /Author (NoteNest demo content) /Subject (Operating Systems) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000147 00000 n 
+0000000244 00000 n 
+0000000346 00000 n 
+0000000441 00000 n 
+0000000546 00000 n 
+0000005611 00000 n 
+0000005773 00000 n 
+0000006454 00000 n 
+0000006617 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R /Info 11 0 R >>
+startxref
+6800
+%%EOF

@@ -1,0 +1,97 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 4499 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  STUDY NOTES  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (Classes, Objects and the Four Pillars) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Object-Oriented Programming  -  Unit 1 - Core OOP concepts) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (Procedural vs object-oriented) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 623.89 Td (Procedural code organizes a program around functions that act on shared data. Object-oriented) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 608.89 Td (programming \(OOP\) bundles data and the operations on it into objects, which makes large programs) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 593.89 Td (easier to reason about, reuse and test.) Tj ET
+0.490 0.230 0.930 rg 54.00 560.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 564.89 Td (Classes and objects) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 542.89 Td (A class is a blueprint that defines fields \(state\) and methods \(behaviour\). An object is an instance of a) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 527.89 Td (class with its own state. Constructors initialize new objects.) Tj ET
+0.945 0.953 0.980 rg 54.00 396.89 487.28 120.00 re f
+0.310 0.270 0.900 rg 54.00 396.89 3.00 120.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 504.89 Td (class Account {) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 492.89 Td (    private double balance;           // encapsulated state) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 480.89 Td (    public Account\(double opening\) { balance = opening; }) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 468.89 Td (    public void deposit\(double amt\) {) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 456.89 Td (        if \(amt <= 0\) throw new IllegalArgumentException\(\);) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 444.89 Td (        balance += amt;) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 432.89 Td (    }) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 420.89 Td (    public double getBalance\(\) { return balance; }) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 408.89 Td (}) Tj ET
+0.490 0.230 0.930 rg 54.00 368.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 372.89 Td (The four pillars) Tj ET
+0.490 0.230 0.930 rg 59.00 353.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 350.89 Td (Encapsulation: hide internal state behind a public interface \(private fields + methods\) so invariants) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 335.89 Td (cannot be broken from outside.) Tj ET
+0.490 0.230 0.930 rg 59.00 321.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 318.89 Td (Abstraction: expose what an object does, not how - via abstract classes and interfaces.) Tj ET
+0.490 0.230 0.930 rg 59.00 304.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 301.89 Td (Inheritance: a subclass reuses and extends a superclass \(an is-a relationship\).) Tj ET
+0.490 0.230 0.930 rg 59.00 287.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 284.89 Td (Polymorphism: one interface, many behaviours - the method that runs depends on the actual object) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 269.89 Td (type.) Tj ET
+0.490 0.230 0.930 rg 54.00 234.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 238.89 Td (Static vs instance members) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 216.89 Td (A static member belongs to the class itself and is shared by all objects; an instance member belongs to a) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 201.89 Td (single object. Static methods cannot use this.) Tj ET
+0.930 0.920 1.000 rg 54.00 150.89 487.28 42.00 re f
+0.490 0.230 0.930 rg 54.00 150.89 3.00 42.00 re f
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 179.89 Td (Exam tip: constructor overloading is compile-time polymorphism; constructors are never inherited, but a) Tj ET
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 165.89 Td (subclass constructor calls super\(...\) first.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 1) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (Classes, Objects and the Four Pillars) /Author (NoteNest demo content) /Subject (Object-Oriented Programming) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000140 00000 n 
+0000000237 00000 n 
+0000000339 00000 n 
+0000000434 00000 n 
+0000000539 00000 n 
+0000005090 00000 n 
+0000005252 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+5434
+%%EOF

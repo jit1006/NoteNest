@@ -1,0 +1,117 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 2 /Kids [8 0 R 10 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 4930 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  STUDY NOTES  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (Processes, Threads and CPU Scheduling) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Operating Systems  -  Units 1-2 - Process management) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (What does an operating system do?) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 623.89 Td (An operating system manages hardware resources \(CPU, memory, storage, devices\), provides) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 608.89 Td (abstractions such as processes and files, and offers a safe interface to programs through system calls.) Tj ET
+0.490 0.230 0.930 rg 54.00 575.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 579.89 Td (Processes) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 557.89 Td (A process is a program in execution with its own address space, registers and open files. The OS tracks) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 542.89 Td (each process in a Process Control Block \(PCB\).) Tj ET
+0.490 0.230 0.930 rg 59.00 526.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 523.89 Td (States: new, ready, running, waiting \(blocked\), terminated.) Tj ET
+0.490 0.230 0.930 rg 59.00 509.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 506.89 Td (A context switch saves the state of the running process and loads another - it is pure overhead.) Tj ET
+0.490 0.230 0.930 rg 59.00 492.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 489.89 Td (fork\(\) creates a child process; exec\(\) replaces its program image; wait\(\) lets the parent collect the) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 474.89 Td (exit status.) Tj ET
+0.490 0.230 0.930 rg 54.00 439.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 443.89 Td (Threads) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 421.89 Td (Threads are lightweight units of execution inside a process. They share code, heap and files but have) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 406.89 Td (separate stacks and registers, so creation and switching are cheaper than for processes - but shared) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 391.89 Td (data needs synchronization.) Tj ET
+0.490 0.230 0.930 rg 54.00 358.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 362.89 Td (CPU scheduling criteria) Tj ET
+0.490 0.230 0.930 rg 59.00 343.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 340.89 Td (CPU utilization and throughput - maximize.) Tj ET
+0.490 0.230 0.930 rg 59.00 326.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 323.89 Td (Turnaround time = completion - arrival. Waiting time = turnaround - burst. Response time = first run -) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 308.89 Td (arrival.) Tj ET
+0.490 0.230 0.930 rg 54.00 273.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 277.89 Td (Scheduling algorithms) Tj ET
+0.490 0.230 0.930 rg 59.00 258.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 255.89 Td (FCFS: simple, non-preemptive, suffers from the convoy effect.) Tj ET
+0.490 0.230 0.930 rg 59.00 241.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 238.89 Td (SJF / SRTF: minimum average waiting time but needs burst estimates and can starve long jobs.) Tj ET
+0.490 0.230 0.930 rg 59.00 224.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 221.89 Td (Round Robin: each process gets a time quantum; good response time; too small a quantum causes) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 206.89 Td (overhead.) Tj ET
+0.490 0.230 0.930 rg 59.00 192.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 189.89 Td (Priority: highest priority first; use aging to prevent starvation.) Tj ET
+0.930 0.920 1.000 rg 54.00 136.89 487.28 42.00 re f
+0.490 0.230 0.930 rg 54.00 136.89 3.00 42.00 re f
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 165.89 Td (Worked example \(FCFS\): P1 burst 5, P2 burst 3, P3 burst 8, all arriving at 0. Waiting times are 0, 5 and) Tj ET
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 151.89 Td (8, so the average waiting time is 13/3 = 4.33.) Tj ET
+0.490 0.230 0.930 rg 54.00 104.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 108.89 Td (Synchronization) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 86.89 Td (A race condition occurs when the result depends on thread timing. A critical section must offer mutual) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 556 >>
+stream
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 787.89 Td (exclusion, progress and bounded waiting. Tools: mutex locks, semaphores \(wait/signal\) and monitors.) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 772.89 Td (Classic problems: producer-consumer, readers-writers, dining philosophers.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 2 of 2) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Title (Processes, Threads and CPU Scheduling) /Author (NoteNest demo content) /Subject (Operating Systems) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000147 00000 n 
+0000000244 00000 n 
+0000000346 00000 n 
+0000000441 00000 n 
+0000000546 00000 n 
+0000005528 00000 n 
+0000005690 00000 n 
+0000006297 00000 n 
+0000006460 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R /Info 11 0 R >>
+startxref
+6633
+%%EOF

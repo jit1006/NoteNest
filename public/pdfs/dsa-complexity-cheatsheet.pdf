@@ -1,0 +1,92 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 3787 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  QUICK REFERENCE  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (Complexity Cheat Sheet) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Data Structures and Algorithms  -  Time and space at a glance) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (Data structure operations \(average case\)) Tj ET
+0.945 0.953 0.980 rg 54.00 535.89 487.28 96.00 re f
+0.310 0.270 0.900 rg 54.00 535.89 3.00 96.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 619.89 Td (Structure        Access    Search    Insert    Delete) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 607.89 Td (Array            O\(1\)      O\(n\)      O\(n\)      O\(n\)) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 595.89 Td (Linked list      O\(n\)      O\(n\)      O\(1\)*     O\(1\)*) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 583.89 Td (Stack / Queue    -         O\(n\)      O\(1\)      O\(1\)) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 571.89 Td (Hash table       -         O\(1\)      O\(1\)      O\(1\)) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 559.89 Td (BST \(balanced\)   -         O\(log n\)  O\(log n\)  O\(log n\)) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 547.89 Td (Binary heap      -         O\(n\)      O\(log n\)  O\(log n\)) Tj ET
+0.930 0.920 1.000 rg 54.00 503.89 487.28 28.00 re f
+0.490 0.230 0.930 rg 54.00 503.89 3.00 28.00 re f
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 518.89 Td (* Insert/delete at a known position \(head, or given node in a doubly linked list\).) Tj ET
+0.490 0.230 0.930 rg 54.00 471.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 475.89 Td (Sorting algorithms) Tj ET
+0.945 0.953 0.980 rg 54.00 365.89 487.28 96.00 re f
+0.310 0.270 0.900 rg 54.00 365.89 3.00 96.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 449.89 Td (Algorithm   Best        Average     Worst       Stable) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 437.89 Td (Bubble      O\(n\)        O\(n^2\)      O\(n^2\)      yes) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 425.89 Td (Insertion   O\(n\)        O\(n^2\)      O\(n^2\)      yes) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 413.89 Td (Selection   O\(n^2\)      O\(n^2\)      O\(n^2\)      no) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 401.89 Td (Merge       O\(n log n\)  O\(n log n\)  O\(n log n\)  yes) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 389.89 Td (Quick       O\(n log n\)  O\(n log n\)  O\(n^2\)      no) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 377.89 Td (Heap        O\(n log n\)  O\(n log n\)  O\(n log n\)  no) Tj ET
+0.490 0.230 0.930 rg 54.00 337.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 341.89 Td (Graph algorithms) Tj ET
+0.490 0.230 0.930 rg 59.00 322.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 319.89 Td (BFS / DFS: O\(V + E\).) Tj ET
+0.490 0.230 0.930 rg 59.00 305.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 302.89 Td (Dijkstra \(binary heap\): O\(\(V + E\) log V\).) Tj ET
+0.490 0.230 0.930 rg 59.00 288.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 285.89 Td (Bellman-Ford: O\(V * E\), handles negative edges.) Tj ET
+0.490 0.230 0.930 rg 59.00 271.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 268.89 Td (Kruskal: O\(E log E\). Prim \(heap\): O\(E log V\).) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 1) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (Complexity Cheat Sheet) /Author (NoteNest demo content) /Subject (Data Structures and Algorithms) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000140 00000 n 
+0000000237 00000 n 
+0000000339 00000 n 
+0000000434 00000 n 
+0000000539 00000 n 
+0000004378 00000 n 
+0000004540 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+4710
+%%EOF

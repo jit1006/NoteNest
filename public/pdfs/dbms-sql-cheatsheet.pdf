@@ -1,0 +1,94 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 3544 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  QUICK REFERENCE  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (SQL Quick Reference) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Database Management Systems  -  One-page cheat sheet) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (Query skeleton) Tj ET
+0.945 0.953 0.980 rg 54.00 559.89 487.28 72.00 re f
+0.310 0.270 0.900 rg 54.00 559.89 3.00 72.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 619.89 Td (SELECT [DISTINCT] columns | aggregates) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 607.89 Td (FROM table [JOIN other ON condition]) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 595.89 Td ([WHERE row_condition]) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 583.89 Td ([GROUP BY columns [HAVING group_condition]]) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 571.89 Td ([ORDER BY column [ASC|DESC]] [LIMIT n];) Tj ET
+0.490 0.230 0.930 rg 54.00 531.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 535.89 Td (Aggregates) Tj ET
+0.490 0.230 0.930 rg 59.00 516.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 513.89 Td (COUNT\(*\), COUNT\(col\) ignores NULL, SUM, AVG, MIN, MAX.) Tj ET
+0.490 0.230 0.930 rg 59.00 499.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 496.89 Td (Use COUNT\(DISTINCT col\) to count unique values.) Tj ET
+0.490 0.230 0.930 rg 54.00 461.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 465.89 Td (Data definition and manipulation) Tj ET
+0.945 0.953 0.980 rg 54.00 367.89 487.28 84.00 re f
+0.310 0.270 0.900 rg 54.00 367.89 3.00 84.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 439.89 Td (CREATE TABLE t \(id INT PRIMARY KEY, name TEXT NOT NULL\);) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 427.89 Td (ALTER TABLE t ADD COLUMN age INT;) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 415.89 Td (INSERT INTO t \(id, name\) VALUES \(1, 'Asha'\);) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 403.89 Td (UPDATE t SET age = 21 WHERE id = 1;) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 391.89 Td (DELETE FROM t WHERE id = 1;) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 379.89 Td (DROP TABLE t;) Tj ET
+0.490 0.230 0.930 rg 54.00 339.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 343.89 Td (Constraints) Tj ET
+0.490 0.230 0.930 rg 59.00 324.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 321.89 Td (PRIMARY KEY, UNIQUE, NOT NULL, CHECK \(age >= 0\), FOREIGN KEY ... REFERENCES.) Tj ET
+0.490 0.230 0.930 rg 59.00 307.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 304.89 Td (ON DELETE CASCADE removes child rows automatically.) Tj ET
+0.490 0.230 0.930 rg 54.00 269.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 273.89 Td (NULL handling) Tj ET
+0.490 0.230 0.930 rg 59.00 254.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 251.89 Td (Use IS NULL / IS NOT NULL - never = NULL.) Tj ET
+0.490 0.230 0.930 rg 59.00 237.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 234.89 Td (COALESCE\(a, b\) returns the first non-NULL value.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 1) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (SQL Quick Reference) /Author (NoteNest demo content) /Subject (Database Management Systems) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000140 00000 n 
+0000000237 00000 n 
+0000000339 00000 n 
+0000000434 00000 n 
+0000000539 00000 n 
+0000004135 00000 n 
+0000004297 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+4461
+%%EOF

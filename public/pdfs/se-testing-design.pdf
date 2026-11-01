@@ -1,0 +1,99 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 4206 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  STUDY NOTES  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (Design, Testing and Maintenance) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Software Engineering  -  Units 3-4 - Quality assurance) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (Good design) Tj ET
+0.490 0.230 0.930 rg 59.00 626.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 623.89 Td (High cohesion: a module does one well-defined job.) Tj ET
+0.490 0.230 0.930 rg 59.00 609.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 606.89 Td (Low coupling: modules depend on each other as little as possible.) Tj ET
+0.490 0.230 0.930 rg 59.00 592.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 589.89 Td (Modularity, information hiding and clear interfaces make change cheap.) Tj ET
+0.490 0.230 0.930 rg 54.00 554.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 558.89 Td (Testing levels) Tj ET
+0.490 0.230 0.930 rg 59.00 539.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 536.89 Td (Unit testing - one function or class in isolation.) Tj ET
+0.490 0.230 0.930 rg 59.00 522.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 519.89 Td (Integration testing - modules working together.) Tj ET
+0.490 0.230 0.930 rg 59.00 505.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 502.89 Td (System testing - the whole product against requirements.) Tj ET
+0.490 0.230 0.930 rg 59.00 488.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 485.89 Td (Acceptance testing - the customer decides it is fit for use.) Tj ET
+0.490 0.230 0.930 rg 54.00 450.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 454.89 Td (Black-box vs white-box) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 432.89 Td (Black-box techniques ignore the code: equivalence partitioning and boundary value analysis. White-box) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 417.89 Td (techniques use the code structure: statement, branch and path coverage.) Tj ET
+0.930 0.920 1.000 rg 54.00 380.89 487.28 28.00 re f
+0.490 0.230 0.930 rg 54.00 380.89 3.00 28.00 re f
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 395.89 Td (Boundary value example: an age field accepts 18 to 60. Test 17, 18, 19, 59, 60 and 61.) Tj ET
+0.490 0.230 0.930 rg 54.00 348.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 352.89 Td (Cyclomatic complexity) Tj ET
+0.945 0.953 0.980 rg 54.00 290.89 487.28 48.00 re f
+0.310 0.270 0.900 rg 54.00 290.89 3.00 48.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 326.89 Td (V\(G\) = E - N + 2P) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 314.89 Td (  E = edges, N = nodes, P = connected components) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 302.89 Td (Shortcut: V\(G\) = number of decision points + 1) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 276.89 Td (V\(G\) gives the number of independent paths, and so the minimum number of test cases needed for full) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 261.89 Td (branch coverage.) Tj ET
+0.490 0.230 0.930 rg 54.00 228.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 232.89 Td (Maintenance and quality) Tj ET
+0.490 0.230 0.930 rg 59.00 213.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 210.89 Td (Types: corrective, adaptive, perfective, preventive.) Tj ET
+0.490 0.230 0.930 rg 59.00 196.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 193.89 Td (Version control \(Git\), code reviews and continuous integration keep quality high.) Tj ET
+0.490 0.230 0.930 rg 59.00 179.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 176.89 Td (Technical debt is the future cost of shortcuts taken now.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 1) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (Design, Testing and Maintenance) /Author (NoteNest demo content) /Subject (Software Engineering) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000140 00000 n 
+0000000237 00000 n 
+0000000339 00000 n 
+0000000434 00000 n 
+0000000539 00000 n 
+0000004797 00000 n 
+0000004959 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+5128
+%%EOF

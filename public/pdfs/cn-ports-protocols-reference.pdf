@@ -1,0 +1,84 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 2756 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  QUICK REFERENCE  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (Common Ports and Protocols) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Computer Networks  -  Quick reference) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (Well-known ports) Tj ET
+0.945 0.953 0.980 rg 54.00 511.89 487.28 120.00 re f
+0.310 0.270 0.900 rg 54.00 511.89 3.00 120.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 619.89 Td (Port   Protocol  Purpose) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 607.89 Td (20/21  FTP       File transfer \(data / control\)) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 595.89 Td (22     SSH       Secure remote login) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 583.89 Td (25     SMTP      Send email) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 571.89 Td (53     DNS       Name resolution \(UDP and TCP\)) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 559.89 Td (80     HTTP      Web) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 547.89 Td (110    POP3      Retrieve email) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 535.89 Td (143    IMAP      Retrieve email) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 523.89 Td (443    HTTPS     Web over TLS) Tj ET
+0.490 0.230 0.930 rg 54.00 483.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 487.89 Td (Subnet cheat table) Tj ET
+0.945 0.953 0.980 rg 54.00 377.89 487.28 96.00 re f
+0.310 0.270 0.900 rg 54.00 377.89 3.00 96.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 461.89 Td (CIDR  Mask             Usable hosts) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 449.89 Td (/24   255.255.255.0    254) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 437.89 Td (/25   255.255.255.128  126) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 425.89 Td (/26   255.255.255.192  62) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 413.89 Td (/27   255.255.255.224  30) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 401.89 Td (/28   255.255.255.240  14) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 389.89 Td (/30   255.255.255.252  2) Tj ET
+0.930 0.920 1.000 rg 54.00 345.89 487.28 28.00 re f
+0.490 0.230 0.930 rg 54.00 345.89 3.00 28.00 re f
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 360.89 Td (Usable hosts = 2^\(32 - prefix\) - 2.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 1) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (Common Ports and Protocols) /Author (NoteNest demo content) /Subject (Computer Networks) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000140 00000 n 
+0000000237 00000 n 
+0000000339 00000 n 
+0000000434 00000 n 
+0000000539 00000 n 
+0000003347 00000 n 
+0000003509 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+3670
+%%EOF

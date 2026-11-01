@@ -1,0 +1,97 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 4265 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  MODEL PRACTICE PAPER  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (DBMS Model Practice Paper) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Database Management Systems  -  Demo paper - 2025 edition - 50 marks) Tj ET
+0.930 0.920 1.000 rg 54.00 623.89 487.28 42.00 re f
+0.490 0.230 0.930 rg 54.00 623.89 3.00 42.00 re f
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 652.89 Td (This is a self-created practice paper written for NoteNest. It is NOT an official university question paper.) Tj ET
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 638.89 Td (Use it to rehearse the style of exam questions.) Tj ET
+0.490 0.230 0.930 rg 54.00 591.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 595.89 Td (Section A - Short answers \(2 x 5 marks\)) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 573.89 Td (Q1.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 573.89 Td ([5 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 573.89 Td (Differentiate between a primary key, a candidate key and a super key with examples.) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 550.89 Td (Q2.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 550.89 Td ([5 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 550.89 Td (List the four ACID properties and explain Atomicity with a bank-transfer example.) Tj ET
+0.490 0.230 0.930 rg 54.00 513.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 517.89 Td (Section B - Medium answers \(3 x 8 marks\)) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 495.89 Td (Q3.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 495.89 Td ([8 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 495.89 Td (Draw an ER diagram for a library \(Member, Book, Loan\) and map it to relational tables.) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 472.89 Td (Q4.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 472.89 Td ([8 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 472.89 Td (Write SQL to list departments whose average salary exceeds 50000, ordered by average) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 457.89 Td (salary descending. Explain why HAVING is needed.) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 434.89 Td (Q5.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 434.89 Td ([8 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 434.89 Td (Explain 2NF and 3NF. Normalize Order\(order_id, product_id, product_name, qty\) step by) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 419.89 Td (step.) Tj ET
+0.490 0.230 0.930 rg 54.00 382.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 386.89 Td (Section C - Long answer \(1 x 11 marks\)) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 364.89 Td (Q6.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 364.89 Td ([11 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 364.89 Td (Explain the four isolation levels and the anomalies each one prevents. Give an example) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 349.89 Td (of a phantom read.) Tj ET
+0.490 0.230 0.930 rg 54.00 312.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 316.89 Td (Answer hints) Tj ET
+0.490 0.230 0.930 rg 59.00 297.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 294.89 Td (Q1: primary key is the chosen candidate key; every candidate key is a minimal super key.) Tj ET
+0.490 0.230 0.930 rg 59.00 280.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 277.89 Td (Q4: use GROUP BY dept with HAVING AVG\(salary\) > 50000 because WHERE cannot filter) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 262.89 Td (aggregates.) Tj ET
+0.490 0.230 0.930 rg 59.00 248.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 245.89 Td (Q5: product_name depends only on product_id, a partial dependency, so split the table.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 1) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (DBMS Model Practice Paper) /Author (NoteNest demo content) /Subject (Database Management Systems) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000140 00000 n 
+0000000237 00000 n 
+0000000339 00000 n 
+0000000434 00000 n 
+0000000539 00000 n 
+0000004856 00000 n 
+0000005018 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+5188
+%%EOF

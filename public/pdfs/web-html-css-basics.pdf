@@ -1,0 +1,103 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 4488 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  STUDY NOTES  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (HTML5, CSS Layout and Responsive) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 724.89 Td (Design) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Web Development  -  Unit 1 - Structure and style) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (Semantic HTML) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 623.89 Td (Semantic elements describe meaning, which helps accessibility, SEO and maintainability. Prefer header,) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 608.89 Td (nav, main, section, article, aside and footer over generic div elements.) Tj ET
+0.945 0.953 0.980 rg 54.00 513.89 487.28 84.00 re f
+0.310 0.270 0.900 rg 54.00 513.89 3.00 84.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 585.89 Td (<main>) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 573.89 Td (  <article>) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 561.89 Td (    <h1>Normalization</h1>) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 549.89 Td (    <p>Remove redundancy using normal forms.</p>) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 537.89 Td (  </article>) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 525.89 Td (</main>) Tj ET
+0.490 0.230 0.930 rg 54.00 485.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 489.89 Td (The CSS box model) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 467.89 Td (Every element is a box: content, padding, border and margin. With box-sizing: border-box, the declared) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 452.89 Td (width includes padding and border, which makes layouts predictable.) Tj ET
+0.490 0.230 0.930 rg 54.00 419.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 423.89 Td (Flexbox and Grid) Tj ET
+0.490 0.230 0.930 rg 59.00 404.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 401.89 Td (Flexbox is one-dimensional - great for navbars, toolbars and aligning items in a row or column.) Tj ET
+0.490 0.230 0.930 rg 59.00 387.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 384.89 Td (Grid is two-dimensional - great for page layouts and card galleries.) Tj ET
+0.945 0.953 0.980 rg 54.00 299.89 487.28 72.00 re f
+0.310 0.270 0.900 rg 54.00 299.89 3.00 72.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 359.89 Td (.cards {) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 347.89 Td (  display: grid;) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 335.89 Td (  grid-template-columns: repeat\(auto-fill, minmax\(260px, 1fr\)\);) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 323.89 Td (  gap: 1rem;) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 311.89 Td (}) Tj ET
+0.490 0.230 0.930 rg 54.00 271.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 275.89 Td (Responsive design) Tj ET
+0.490 0.230 0.930 rg 59.00 256.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 253.89 Td (Design mobile-first, then add breakpoints with min-width media queries.) Tj ET
+0.490 0.230 0.930 rg 59.00 239.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 236.89 Td (Add <meta name="viewport" content="width=device-width, initial-scale=1">.) Tj ET
+0.490 0.230 0.930 rg 59.00 222.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 219.89 Td (Use relative units \(rem, %, fr\) and fluid images \(max-width: 100%\).) Tj ET
+0.490 0.230 0.930 rg 54.00 184.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 188.89 Td (Accessibility checklist) Tj ET
+0.490 0.230 0.930 rg 59.00 169.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 166.89 Td (Every image has meaningful alt text; every form field has a label.) Tj ET
+0.490 0.230 0.930 rg 59.00 152.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 149.89 Td (Keep text contrast at or above 4.5:1 and make focus states visible.) Tj ET
+0.490 0.230 0.930 rg 59.00 135.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 132.89 Td (Everything usable by mouse must be usable by keyboard.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 1) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (HTML5, CSS Layout and Responsive Design) /Author (NoteNest demo content) /Subject (Web Development) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000140 00000 n 
+0000000237 00000 n 
+0000000339 00000 n 
+0000000434 00000 n 
+0000000539 00000 n 
+0000005079 00000 n 
+0000005241 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+5413
+%%EOF

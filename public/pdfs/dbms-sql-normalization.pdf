@@ -1,0 +1,124 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 2 /Kids [8 0 R 10 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 5084 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  STUDY NOTES  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (SQL Essentials and Normalization) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Database Management Systems  -  Units 2-3 - Querying and schema design) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (Core SQL statements) Tj ET
+0.945 0.953 0.980 rg 54.00 547.89 487.28 84.00 re f
+0.310 0.270 0.900 rg 54.00 547.89 3.00 84.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 619.89 Td (SELECT dept, COUNT\(*\) AS staff, AVG\(salary\) AS avg_pay) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 607.89 Td (FROM   Employee) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 595.89 Td (WHERE  active = 1) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 583.89 Td (GROUP  BY dept) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 571.89 Td (HAVING COUNT\(*\) >= 3) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 559.89 Td (ORDER  BY avg_pay DESC;) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 533.89 Td (WHERE filters rows before grouping; HAVING filters groups after aggregation. The logical order of) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 518.89 Td (evaluation is FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY.) Tj ET
+0.490 0.230 0.930 rg 54.00 485.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 489.89 Td (Joins) Tj ET
+0.490 0.230 0.930 rg 59.00 470.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 467.89 Td (INNER JOIN returns only matching rows from both tables.) Tj ET
+0.490 0.230 0.930 rg 59.00 453.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 450.89 Td (LEFT JOIN keeps every row from the left table and fills missing right-side columns with NULL.) Tj ET
+0.490 0.230 0.930 rg 59.00 436.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 433.89 Td (FULL OUTER JOIN keeps unmatched rows from both sides.) Tj ET
+0.490 0.230 0.930 rg 59.00 419.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 416.89 Td (A subquery can replace many joins, but a join is often easier for the optimizer.) Tj ET
+0.490 0.230 0.930 rg 54.00 381.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 385.89 Td (Functional dependencies) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 363.89 Td (A functional dependency X -> Y means that whenever two rows agree on X they must agree on Y. For) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 348.89 Td (example roll_no -> name. Normalization uses dependencies to remove update, insert and delete) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 333.89 Td (anomalies.) Tj ET
+0.490 0.230 0.930 rg 54.00 300.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 304.89 Td (Normal forms) Tj ET
+0.490 0.230 0.930 rg 59.00 285.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 282.89 Td (1NF: every attribute is atomic - no repeating groups or lists in a cell.) Tj ET
+0.490 0.230 0.930 rg 59.00 268.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 265.89 Td (2NF: 1NF plus no partial dependency \(a non-key attribute depending on only part of a composite) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 250.89 Td (key\).) Tj ET
+0.490 0.230 0.930 rg 59.00 236.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 233.89 Td (3NF: 2NF plus no transitive dependency \(non-key -> non-key\).) Tj ET
+0.490 0.230 0.930 rg 59.00 219.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 216.89 Td (BCNF: for every non-trivial dependency X -> Y, X must be a super key.) Tj ET
+0.930 0.920 1.000 rg 54.00 163.89 487.28 42.00 re f
+0.490 0.230 0.930 rg 54.00 163.89 3.00 42.00 re f
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 192.89 Td (Example: Order\(order_id, product_id, product_name, qty\) with product_id -> product_name violates) Tj ET
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 178.89 Td (2NF. Split into Order\(order_id, product_id, qty\) and Product\(product_id, product_name\).) Tj ET
+0.490 0.230 0.930 rg 54.00 131.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 135.89 Td (Transactions and ACID) Tj ET
+0.490 0.230 0.930 rg 59.00 116.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 113.89 Td (Atomicity: all operations of a transaction happen or none do.) Tj ET
+0.490 0.230 0.930 rg 59.00 99.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 96.89 Td (Consistency: a transaction moves the database from one valid state to another.) Tj ET
+0.490 0.230 0.930 rg 59.00 82.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 79.89 Td (Isolation: concurrent transactions do not see each other's partial work.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 736 >>
+stream
+0.490 0.230 0.930 rg 59.00 790.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 787.89 Td (Durability: committed changes survive crashes.) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 766.89 Td (Isolation levels \(read uncommitted, read committed, repeatable read, serializable\) trade correctness) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 751.89 Td (against concurrency by allowing or preventing dirty reads, non-repeatable reads and phantom rows.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 2 of 2) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Title (SQL Essentials and Normalization) /Author (NoteNest demo content) /Subject (Database Management Systems) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000147 00000 n 
+0000000244 00000 n 
+0000000346 00000 n 
+0000000441 00000 n 
+0000000546 00000 n 
+0000005682 00000 n 
+0000005844 00000 n 
+0000006631 00000 n 
+0000006794 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R /Info 11 0 R >>
+startxref
+6972
+%%EOF

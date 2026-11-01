@@ -1,0 +1,94 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 3738 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  MODEL PRACTICE PAPER  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (Software Engineering Model Practice) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 724.89 Td (Paper) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Software Engineering  -  Demo paper - 2025 edition - 50 marks) Tj ET
+0.930 0.920 1.000 rg 54.00 637.89 487.28 28.00 re f
+0.490 0.230 0.930 rg 54.00 637.89 3.00 28.00 re f
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 652.89 Td (Self-created practice paper for NoteNest, not an official university paper.) Tj ET
+0.490 0.230 0.930 rg 54.00 605.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 609.89 Td (Section A - Short answers \(5 x 4 marks\)) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 587.89 Td (Q1.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 587.89 Td ([4 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 587.89 Td (List the phases of the SDLC.) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 564.89 Td (Q2.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 564.89 Td ([4 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 564.89 Td (Differentiate between functional and non-functional requirements with two examples) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 549.89 Td (each.) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 526.89 Td (Q3.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 526.89 Td ([4 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 526.89 Td (What is coupling? Why is low coupling desirable?) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 503.89 Td (Q4.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 503.89 Td ([4 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 503.89 Td (Differentiate between black-box and white-box testing.) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 480.89 Td (Q5.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 480.89 Td ([4 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 480.89 Td (Define technical debt.) Tj ET
+0.490 0.230 0.930 rg 54.00 443.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 447.89 Td (Section B - Long answers \(2 x 15 marks\)) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 425.89 Td (Q6.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 425.89 Td ([15 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 425.89 Td (Compare Waterfall and Agile. Describe a project for which each is a better fit.) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 402.89 Td (Q7.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 402.89 Td ([15 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 402.89 Td (A function has 3 if statements and 1 while loop. Compute its cyclomatic complexity and) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 387.89 Td (propose test cases for boundary values of a field that accepts 1 to 100.) Tj ET
+0.490 0.230 0.930 rg 54.00 350.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 354.89 Td (Answer hints) Tj ET
+0.490 0.230 0.930 rg 59.00 335.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 332.89 Td (Q7: decision points = 4, so V\(G\) = 4 + 1 = 5.) Tj ET
+0.490 0.230 0.930 rg 59.00 318.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 315.89 Td (Q7: boundary tests for 1..100 are 0, 1, 2, 99, 100, 101.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 1) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (Software Engineering Model Practice Paper) /Author (NoteNest demo content) /Subject (Software Engineering) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000140 00000 n 
+0000000237 00000 n 
+0000000339 00000 n 
+0000000434 00000 n 
+0000000539 00000 n 
+0000004329 00000 n 
+0000004491 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+4670
+%%EOF

@@ -1,0 +1,93 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 3761 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  MODEL PRACTICE PAPER  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (Web Development Model Practice Paper) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Web Development  -  Demo paper - 2026 edition - 50 marks) Tj ET
+0.930 0.920 1.000 rg 54.00 637.89 487.28 28.00 re f
+0.490 0.230 0.930 rg 54.00 637.89 3.00 28.00 re f
+BT /F4 10 Tf 0.220 0.180 0.550 rg 68.00 652.89 Td (Self-created practice paper for NoteNest, not an official university paper.) Tj ET
+0.490 0.230 0.930 rg 54.00 605.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 609.89 Td (Section A - Short answers \(5 x 4 marks\)) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 587.89 Td (Q1.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 587.89 Td ([4 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 587.89 Td (List four semantic HTML5 elements and what each is used for.) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 564.89 Td (Q2.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 564.89 Td ([4 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 564.89 Td (Explain the CSS box model.) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 541.89 Td (Q3.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 541.89 Td ([4 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 541.89 Td (When would you choose CSS Grid over Flexbox?) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 518.89 Td (Q4.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 518.89 Td ([4 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 518.89 Td (Differentiate between == and === in JavaScript with examples.) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 495.89 Td (Q5.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 495.89 Td ([4 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 495.89 Td (What is the difference between localStorage and sessionStorage?) Tj ET
+0.490 0.230 0.930 rg 54.00 458.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 462.89 Td (Section B - Long answers \(2 x 15 marks\)) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 440.89 Td (Q6.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 440.89 Td ([15 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 440.89 Td (Create a responsive card layout using CSS Grid that shows one column on phones, two) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 425.89 Td (on tablets and four on desktops. Write the HTML and CSS.) Tj ET
+BT /F2 10.5 Tf 0.310 0.270 0.900 rg 54.00 402.89 Td (Q7.) Tj ET
+BT /F2 9.5 Tf 0.390 0.450 0.550 rg 489.28 402.89 Td ([15 marks]) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 402.89 Td (Explain Promises and async/await. Write a function that fetches JSON, handles HTTP) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 82.00 387.89 Td (errors and displays the result in the DOM.) Tj ET
+0.490 0.230 0.930 rg 54.00 350.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 354.89 Td (Answer hints) Tj ET
+0.490 0.230 0.930 rg 59.00 335.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 332.89 Td (Q6: use a mobile-first grid with media queries at 640px and 1024px.) Tj ET
+0.490 0.230 0.930 rg 59.00 318.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 315.89 Td (Q7: check response.ok before calling response.json\(\) and wrap the call in try/catch.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 1) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Title (Web Development Model Practice Paper) /Author (NoteNest demo content) /Subject (Web Development) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000140 00000 n 
+0000000237 00000 n 
+0000000339 00000 n 
+0000000434 00000 n 
+0000000539 00000 n 
+0000004352 00000 n 
+0000004514 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R /Info 9 0 R >>
+startxref
+4683
+%%EOF

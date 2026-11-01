@@ -1,0 +1,122 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /PageMode /UseNone >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 2 /Kids [8 0 R 10 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 5028 >>
+stream
+0.310 0.270 0.900 rg 0.00 691.89 595.28 150.00 re f
+0.490 0.230 0.930 rg 0.00 691.89 267.88 150.00 re f
+0.860 0.840 0.990 rg 0.00 687.89 595.28 4.00 re f
+BT /F2 9 Tf 0.880 0.870 1.000 rg 54.00 789.89 Td (NOTENEST  |  STUDY NOTES  |  DEMO) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 753.89 Td (Inheritance, Polymorphism, Interfaces and) Tj ET
+BT /F2 24 Tf 1.000 1.000 1.000 rg 54.00 724.89 Td (Exceptions) Tj ET
+BT /F1 10.5 Tf 0.930 0.920 1.000 rg 54.00 707.89 Td (Object-Oriented Programming  -  Units 2-3 - Reuse and robustness) Tj ET
+0.490 0.230 0.930 rg 54.00 641.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 645.89 Td (Inheritance in practice) Tj ET
+0.945 0.953 0.980 rg 54.00 511.89 487.28 120.00 re f
+0.310 0.270 0.900 rg 54.00 511.89 3.00 120.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 619.89 Td (abstract class Shape {) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 607.89 Td (    abstract double area\(\);) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 595.89 Td (    public String toString\(\) { return getClass\(\).getSimpleName\(\)) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 583.89 Td (        + " area=" + area\(\); }) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 571.89 Td (}) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 559.89 Td (class Circle extends Shape {) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 547.89 Td (    double r; Circle\(double r\) { this.r = r; }) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 535.89 Td (    double area\(\) { return Math.PI * r * r; }) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 523.89 Td (}) Tj ET
+0.490 0.230 0.930 rg 59.00 500.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 497.89 Td (Single, multilevel and hierarchical inheritance are supported by most languages; Java avoids multiple) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 482.89 Td (class inheritance but allows multiple interfaces.) Tj ET
+0.490 0.230 0.930 rg 59.00 468.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 465.89 Td (super refers to the parent class; use it to call a parent constructor or overridden method.) Tj ET
+0.490 0.230 0.930 rg 54.00 430.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 434.89 Td (Overloading vs overriding) Tj ET
+0.945 0.953 0.980 rg 54.00 360.89 487.28 60.00 re f
+0.310 0.270 0.900 rg 54.00 360.89 3.00 60.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 408.89 Td (Overloading                    Overriding) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 396.89 Td (Same class, same name          Subclass redefines parent method) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 384.89 Td (Different parameter lists      Same signature and return type) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 372.89 Td (Resolved at compile time       Resolved at run time \(dynamic dispatch\)) Tj ET
+0.490 0.230 0.930 rg 54.00 332.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 336.89 Td (Interfaces vs abstract classes) Tj ET
+0.490 0.230 0.930 rg 59.00 317.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 314.89 Td (An interface declares a contract; a class may implement many interfaces.) Tj ET
+0.490 0.230 0.930 rg 59.00 300.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 297.89 Td (An abstract class can hold state and partial implementation but is single-inherited.) Tj ET
+0.490 0.230 0.930 rg 59.00 283.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 280.89 Td (Prefer composition over inheritance when the relationship is has-a rather than is-a.) Tj ET
+0.490 0.230 0.930 rg 54.00 245.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 249.89 Td (Exception handling) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 227.89 Td (Exceptions separate error handling from normal logic. Use try to guard risky code, catch to handle) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 212.89 Td (specific failures, finally for cleanup that must always run, and throw to signal an error. Checked) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 197.89 Td (exceptions must be declared or handled; unchecked ones \(RuntimeException\) indicate programming) Tj ET
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 54.00 182.89 Td (errors.) Tj ET
+0.945 0.953 0.980 rg 54.00 99.89 487.28 72.00 re f
+0.310 0.270 0.900 rg 54.00 99.89 3.00 72.00 re f
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 159.89 Td (try \(var in = new Scanner\(new File\("data.txt"\)\)\) {) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 147.89 Td (    System.out.println\(in.nextLine\(\)\);) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 135.89 Td (} catch \(FileNotFoundException e\) {) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 123.89 Td (    System.err.println\("Missing file: " + e.getMessage\(\)\);) Tj ET
+BT /F3 9 Tf 0.120 0.160 0.230 rg 66.00 111.89 Td (}) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 1 of 2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 601 >>
+stream
+0.490 0.230 0.930 rg 54.00 773.89 3.50 17.00 re f
+BT /F2 14 Tf 0.310 0.270 0.900 rg 65.00 777.89 Td (SOLID in one line each) Tj ET
+0.490 0.230 0.930 rg 59.00 758.89 3.20 3.20 re f
+BT /F1 10.5 Tf 0.120 0.160 0.230 rg 72.00 755.89 Td (Single responsibility, Open/closed, Liskov substitution, Interface segregation, Dependency inversion.) Tj ET
+0.820 0.840 0.900 rg 54.00 48.00 487.28 0.60 re f
+BT /F1 8 Tf 0.390 0.450 0.550 rg 54.00 34.00 Td (NoteNest demo material - self-created for illustration, not an official publication.) Tj ET
+BT /F1 8 Tf 0.390 0.450 0.550 rg 493.28 34.00 Td (Page 2 of 2) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R /F4 6 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Title (Inheritance, Polymorphism, Interfaces and Exceptions) /Author (NoteNest demo content) /Subject (Object-Oriented Programming) /Creator (NoteNest tools/generate_pdfs.py) >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000147 00000 n 
+0000000244 00000 n 
+0000000346 00000 n 
+0000000441 00000 n 
+0000000546 00000 n 
+0000005626 00000 n 
+0000005788 00000 n 
+0000006440 00000 n 
+0000006603 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R /Info 11 0 R >>
+startxref
+6801
+%%EOF
