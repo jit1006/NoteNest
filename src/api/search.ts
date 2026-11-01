@@ -20,6 +20,7 @@ export function useSearch(p: SearchParams) {
         p_year: p.year ?? null,
         p_semester_number: p.semesterNumber ?? null,
         p_subject_id: p.subjectId ?? null,
+        p_subject_title: p.subjectTitle ?? null,
         p_owner_id: p.ownerId ?? null,
         p_since: p.since ?? null,
         p_until: p.until ?? null,

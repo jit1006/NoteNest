@@ -102,3 +102,22 @@ export function useRemoveMember(spaceId: string) {
     onSuccess: () => invalidateAll(qc),
   })
 }
+
+export type SpaceRole = 'owner' | 'editor' | 'viewer' | null
+
+/** The caller's role in a space, derived from ownership / membership rows they are allowed to see. */
+export function useSpaceRole(spaceId: string | undefined, ownerId: string | undefined): SpaceRole {
+  const uid = useUid()
+  const mine = useMySpaces()
+  if (!uid || !spaceId) return null
+  if (ownerId && ownerId === uid) return 'owner'
+  return mine.data?.shared.find((s) => s.space.id === spaceId)?.role ?? null
+}
+
+export function useSpaceActivity(spaceId: string | undefined, enabled: boolean) {
+  return useQuery({
+    queryKey: ['activity', spaceId],
+    enabled: !!spaceId && enabled,
+    queryFn: async () => unwrap(await supabase.from('activity_events').select('id,event_type,entity_type,entity_id,metadata,created_at,profiles:actor_id(display_name,username)').eq('space_id', spaceId!).order('created_at', { ascending: false }).limit(12)) as unknown as { id: string; event_type: string; entity_type: string; entity_id: string; metadata: { title?: string }; created_at: string; profiles: { display_name: string; username: string } | null }[],
+  })
+}

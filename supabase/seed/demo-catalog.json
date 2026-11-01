@@ -1,0 +1,882 @@
+{
+  "note": "Exported from the NoteNest V1 static catalog (src/data) for the V2 database migration. pdf = file name in public/pdfs.",
+  "subjects": [
+    {
+      "id": "oop",
+      "name": "Object-Oriented Programming",
+      "shortName": "OOP",
+      "semester": 1,
+      "icon": "boxes",
+      "accent": "violet",
+      "description": "Model real problems with classes and objects. Covers encapsulation, inheritance, polymorphism, interfaces and exception handling with Java-style examples.",
+      "units": [
+        {
+          "title": "Unit 1 - Core OOP Concepts",
+          "chapters": [
+            "Classes and objects",
+            "Constructors",
+            "Encapsulation",
+            "Static vs instance members"
+          ]
+        },
+        {
+          "title": "Unit 2 - Inheritance and Polymorphism",
+          "chapters": [
+            "Inheritance types",
+            "Overloading vs overriding",
+            "Abstract classes and interfaces"
+          ]
+        },
+        {
+          "title": "Unit 3 - Robust Programs",
+          "chapters": [
+            "Exception handling",
+            "Custom exceptions",
+            "SOLID principles"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dsa",
+      "name": "Data Structures and Algorithms",
+      "shortName": "DSA",
+      "semester": 2,
+      "icon": "network",
+      "accent": "indigo",
+      "description": "The foundation of efficient programming: complexity analysis, linear and non-linear structures, sorting, searching and graph algorithms.",
+      "units": [
+        {
+          "title": "Unit 1 - Linear Structures",
+          "chapters": [
+            "Complexity analysis",
+            "Arrays",
+            "Linked lists",
+            "Stacks and queues"
+          ]
+        },
+        {
+          "title": "Unit 2 - Trees and Heaps",
+          "chapters": [
+            "Binary search trees",
+            "Traversals",
+            "Heaps and priority queues"
+          ]
+        },
+        {
+          "title": "Unit 3 - Graphs and Sorting",
+          "chapters": [
+            "BFS and DFS",
+            "Shortest paths",
+            "Sorting algorithms"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dbms",
+      "name": "Database Management Systems",
+      "shortName": "DBMS",
+      "semester": 3,
+      "icon": "database",
+      "accent": "sky",
+      "description": "Design and query reliable databases. Learn ER modelling, the relational model, SQL, normalization and transaction management.",
+      "units": [
+        {
+          "title": "Unit 1 - Data Modelling",
+          "chapters": [
+            "Database concepts",
+            "ER model",
+            "Relational model",
+            "Keys"
+          ]
+        },
+        {
+          "title": "Unit 2 - SQL",
+          "chapters": [
+            "DDL and DML",
+            "Joins",
+            "Aggregation and grouping"
+          ]
+        },
+        {
+          "title": "Unit 3 - Design and Transactions",
+          "chapters": [
+            "Functional dependencies",
+            "Normal forms",
+            "ACID and isolation levels"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "web",
+      "name": "Web Development",
+      "shortName": "WEB",
+      "semester": 3,
+      "icon": "layout",
+      "accent": "emerald",
+      "description": "Build accessible, responsive websites with semantic HTML, modern CSS and JavaScript, including the DOM, async code and browser storage.",
+      "units": [
+        {
+          "title": "Unit 1 - Structure and Style",
+          "chapters": [
+            "Semantic HTML",
+            "Box model",
+            "Flexbox and Grid",
+            "Responsive design"
+          ]
+        },
+        {
+          "title": "Unit 2 - JavaScript",
+          "chapters": [
+            "Language essentials",
+            "DOM and events",
+            "Promises and async/await",
+            "Browser storage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "os",
+      "name": "Operating Systems",
+      "shortName": "OS",
+      "semester": 4,
+      "icon": "cpu",
+      "accent": "amber",
+      "description": "Understand what happens beneath your programs: processes, threads, scheduling, synchronization, memory management and deadlocks.",
+      "units": [
+        {
+          "title": "Unit 1 - Processes and Threads",
+          "chapters": [
+            "Process states and PCB",
+            "Threads",
+            "System calls"
+          ]
+        },
+        {
+          "title": "Unit 2 - Scheduling and Synchronization",
+          "chapters": [
+            "CPU scheduling",
+            "Critical sections",
+            "Semaphores and monitors"
+          ]
+        },
+        {
+          "title": "Unit 3 - Memory and Deadlocks",
+          "chapters": [
+            "Paging",
+            "Virtual memory",
+            "Page replacement",
+            "Deadlock handling"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cn",
+      "name": "Computer Networks",
+      "shortName": "CN",
+      "semester": 5,
+      "icon": "network",
+      "accent": "teal",
+      "description": "How data moves across the Internet: layered models, addressing and subnetting, routing, TCP and UDP, and core application protocols.",
+      "units": [
+        {
+          "title": "Unit 1 - Models and Data Link",
+          "chapters": [
+            "OSI and TCP/IP",
+            "Framing and error detection",
+            "Switching"
+          ]
+        },
+        {
+          "title": "Unit 2 - Network Layer",
+          "chapters": [
+            "IPv4 and subnetting",
+            "NAT",
+            "Routing algorithms"
+          ]
+        },
+        {
+          "title": "Unit 3 - Transport and Application",
+          "chapters": [
+            "TCP and UDP",
+            "Congestion control",
+            "DNS, HTTP and SMTP"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "se",
+      "name": "Software Engineering",
+      "shortName": "SE",
+      "semester": 5,
+      "icon": "clipboard",
+      "accent": "rose",
+      "description": "Plan, design, test and maintain software professionally: process models, requirements, UML, testing strategies and quality practices.",
+      "units": [
+        {
+          "title": "Unit 1 - Process Models",
+          "chapters": [
+            "SDLC",
+            "Waterfall and Spiral",
+            "Agile and Scrum"
+          ]
+        },
+        {
+          "title": "Unit 2 - Requirements and Design",
+          "chapters": [
+            "Requirement engineering",
+            "UML diagrams",
+            "Cohesion and coupling"
+          ]
+        },
+        {
+          "title": "Unit 3 - Testing and Maintenance",
+          "chapters": [
+            "Testing levels",
+            "Black-box and white-box",
+            "Cyclomatic complexity",
+            "Maintenance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "name": "Artificial Intelligence",
+      "shortName": "AI",
+      "semester": 6,
+      "icon": "brain",
+      "accent": "fuchsia",
+      "description": "An introduction to intelligent agents, search and heuristics, knowledge representation and the fundamentals of machine learning.",
+      "units": [
+        {
+          "title": "Unit 1 - Agents and Search",
+          "chapters": [
+            "Intelligent agents",
+            "Uninformed search",
+            "A* and heuristics",
+            "Minimax"
+          ]
+        },
+        {
+          "title": "Unit 2 - Knowledge and Learning",
+          "chapters": [
+            "Logic",
+            "Supervised learning",
+            "Overfitting",
+            "Evaluation metrics"
+          ]
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "dbms-er-model-relational",
+      "title": "ER Model and Relational Model",
+      "description": "Entities, attributes, relationships, ER-to-table mapping, keys and relational algebra with a worked enrolment example.",
+      "semester": 3,
+      "subjectId": "dbms",
+      "subjectName": "Database Management Systems",
+      "unit": "Unit 1",
+      "topic": "Data Modelling",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/dbms-er-model-relational.pdf",
+      "tags": [
+        "er diagram",
+        "keys",
+        "relational model",
+        "schema"
+      ],
+      "createdAt": "2026-10-20",
+      "pdf": "dbms-er-model-relational.pdf",
+      "popular": true
+    },
+    {
+      "id": "dbms-sql-normalization",
+      "title": "SQL Essentials and Normalization",
+      "description": "SELECT, joins, GROUP BY/HAVING, functional dependencies, 1NF to BCNF, and ACID transactions with isolation levels.",
+      "semester": 3,
+      "subjectId": "dbms",
+      "subjectName": "Database Management Systems",
+      "unit": "Units 2-3",
+      "topic": "SQL and Normalization",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/dbms-sql-normalization.pdf",
+      "tags": [
+        "sql",
+        "joins",
+        "normalization",
+        "acid",
+        "bcnf"
+      ],
+      "createdAt": "2026-10-24",
+      "pdf": "dbms-sql-normalization.pdf",
+      "popular": true
+    },
+    {
+      "id": "dbms-practice-paper",
+      "title": "DBMS Model Practice Paper (2025)",
+      "description": "A 50-mark self-created practice paper with short, medium and long questions plus answer hints. Demo material, not an official paper.",
+      "semester": 3,
+      "subjectId": "dbms",
+      "subjectName": "Database Management Systems",
+      "unit": "All units",
+      "topic": "Exam Practice",
+      "resourceType": "pyq",
+      "year": 2025,
+      "pdfUrl": "pdfs/dbms-practice-paper.pdf",
+      "tags": [
+        "practice paper",
+        "model paper",
+        "sql",
+        "normalization"
+      ],
+      "createdAt": "2026-10-26",
+      "pdf": "dbms-practice-paper.pdf",
+      "popular": false
+    },
+    {
+      "id": "dbms-sql-cheatsheet",
+      "title": "SQL Quick Reference",
+      "description": "One-page cheat sheet: query skeleton, aggregates, DDL/DML, constraints and NULL handling.",
+      "semester": 3,
+      "subjectId": "dbms",
+      "subjectName": "Database Management Systems",
+      "unit": "Unit 2",
+      "topic": "SQL",
+      "resourceType": "reference",
+      "pdfUrl": "pdfs/dbms-sql-cheatsheet.pdf",
+      "tags": [
+        "sql",
+        "cheat sheet",
+        "syntax"
+      ],
+      "createdAt": "2026-10-28",
+      "pdf": "dbms-sql-cheatsheet.pdf",
+      "popular": true
+    },
+    {
+      "id": "dsa-arrays-linked-lists",
+      "title": "Complexity, Arrays, Stacks and Linked Lists",
+      "description": "Big-O basics, array operations, singly and doubly linked lists, stacks, queues and postfix evaluation with code.",
+      "semester": 2,
+      "subjectId": "dsa",
+      "subjectName": "Data Structures and Algorithms",
+      "unit": "Unit 1",
+      "topic": "Linear Data Structures",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/dsa-arrays-linked-lists.pdf",
+      "tags": [
+        "big-o",
+        "linked list",
+        "stack",
+        "queue",
+        "arrays"
+      ],
+      "createdAt": "2026-10-05",
+      "pdf": "dsa-arrays-linked-lists.pdf",
+      "popular": true
+    },
+    {
+      "id": "dsa-trees-graphs",
+      "title": "Trees, Graphs, Sorting and Searching",
+      "description": "BSTs and traversals, heaps, graph representations, BFS/DFS, Dijkstra, MST and the major sorting algorithms.",
+      "semester": 2,
+      "subjectId": "dsa",
+      "subjectName": "Data Structures and Algorithms",
+      "unit": "Units 2-3",
+      "topic": "Non-linear Structures",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/dsa-trees-graphs.pdf",
+      "tags": [
+        "bst",
+        "heap",
+        "graph",
+        "bfs",
+        "dijkstra",
+        "sorting"
+      ],
+      "createdAt": "2026-10-12",
+      "pdf": "dsa-trees-graphs.pdf",
+      "popular": false
+    },
+    {
+      "id": "dsa-practice-paper",
+      "title": "DSA Model Practice Paper (2024)",
+      "description": "Self-created 50-mark practice paper covering complexity, expression conversion, BST operations and Dijkstra. Demo material.",
+      "semester": 2,
+      "subjectId": "dsa",
+      "subjectName": "Data Structures and Algorithms",
+      "unit": "All units",
+      "topic": "Exam Practice",
+      "resourceType": "pyq",
+      "year": 2024,
+      "pdfUrl": "pdfs/dsa-practice-paper.pdf",
+      "tags": [
+        "practice paper",
+        "bst",
+        "dijkstra",
+        "quick sort"
+      ],
+      "createdAt": "2026-10-15",
+      "pdf": "dsa-practice-paper.pdf",
+      "popular": false
+    },
+    {
+      "id": "dsa-complexity-cheatsheet",
+      "title": "Complexity Cheat Sheet",
+      "description": "Time complexity tables for common data structures, sorting algorithms and graph algorithms.",
+      "semester": 2,
+      "subjectId": "dsa",
+      "subjectName": "Data Structures and Algorithms",
+      "unit": "All units",
+      "topic": "Complexity",
+      "resourceType": "reference",
+      "pdfUrl": "pdfs/dsa-complexity-cheatsheet.pdf",
+      "tags": [
+        "big-o",
+        "cheat sheet",
+        "sorting"
+      ],
+      "createdAt": "2026-10-16",
+      "pdf": "dsa-complexity-cheatsheet.pdf",
+      "popular": true
+    },
+    {
+      "id": "os-processes-scheduling",
+      "title": "Processes, Threads and CPU Scheduling",
+      "description": "Process states, PCB, threads, scheduling criteria, FCFS/SJF/RR/priority with a worked example and synchronization basics.",
+      "semester": 4,
+      "subjectId": "os",
+      "subjectName": "Operating Systems",
+      "unit": "Units 1-2",
+      "topic": "Process Management",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/os-processes-scheduling.pdf",
+      "tags": [
+        "process",
+        "thread",
+        "scheduling",
+        "semaphore",
+        "round robin"
+      ],
+      "createdAt": "2026-10-08",
+      "pdf": "os-processes-scheduling.pdf",
+      "popular": true
+    },
+    {
+      "id": "os-memory-deadlocks",
+      "title": "Memory Management, Virtual Memory and Deadlocks",
+      "description": "Paging, TLB, demand paging, FIFO/LRU/optimal replacement, Coffman conditions and the Banker's algorithm.",
+      "semester": 4,
+      "subjectId": "os",
+      "subjectName": "Operating Systems",
+      "unit": "Unit 3",
+      "topic": "Memory and Deadlocks",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/os-memory-deadlocks.pdf",
+      "tags": [
+        "paging",
+        "virtual memory",
+        "deadlock",
+        "banker",
+        "lru"
+      ],
+      "createdAt": "2026-10-14",
+      "pdf": "os-memory-deadlocks.pdf",
+      "popular": false
+    },
+    {
+      "id": "os-practice-paper",
+      "title": "Operating Systems Model Practice Paper (2025)",
+      "description": "Self-created practice paper with scheduling and page-replacement numericals and answer hints. Demo material.",
+      "semester": 4,
+      "subjectId": "os",
+      "subjectName": "Operating Systems",
+      "unit": "All units",
+      "topic": "Exam Practice",
+      "resourceType": "pyq",
+      "year": 2025,
+      "pdfUrl": "pdfs/os-practice-paper.pdf",
+      "tags": [
+        "practice paper",
+        "scheduling",
+        "page replacement"
+      ],
+      "createdAt": "2026-10-18",
+      "pdf": "os-practice-paper.pdf",
+      "popular": false
+    },
+    {
+      "id": "cn-layered-models",
+      "title": "Network Models, Data Link and IP Addressing",
+      "description": "OSI vs TCP/IP layers, framing, flow control, switching, IPv4 addressing, CIDR subnetting and NAT.",
+      "semester": 5,
+      "subjectId": "cn",
+      "subjectName": "Computer Networks",
+      "unit": "Units 1-2",
+      "topic": "Layers and Addressing",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/cn-layered-models.pdf",
+      "tags": [
+        "osi",
+        "tcp/ip",
+        "subnetting",
+        "cidr",
+        "nat"
+      ],
+      "createdAt": "2026-09-28",
+      "pdf": "cn-layered-models.pdf",
+      "popular": false
+    },
+    {
+      "id": "cn-transport-routing",
+      "title": "Routing, TCP/UDP and Application Protocols",
+      "description": "Distance-vector vs link-state routing, TCP handshake and congestion control, DNS, HTTP and email protocols.",
+      "semester": 5,
+      "subjectId": "cn",
+      "subjectName": "Computer Networks",
+      "unit": "Units 3-4",
+      "topic": "Transport and Routing",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/cn-transport-routing.pdf",
+      "tags": [
+        "tcp",
+        "udp",
+        "routing",
+        "dns",
+        "congestion control"
+      ],
+      "createdAt": "2026-10-02",
+      "pdf": "cn-transport-routing.pdf",
+      "popular": true
+    },
+    {
+      "id": "cn-practice-paper",
+      "title": "Computer Networks Model Practice Paper (2023)",
+      "description": "Self-created practice paper on subnetting, TCP, DNS and routing with answer hints. Demo material.",
+      "semester": 5,
+      "subjectId": "cn",
+      "subjectName": "Computer Networks",
+      "unit": "All units",
+      "topic": "Exam Practice",
+      "resourceType": "pyq",
+      "year": 2023,
+      "pdfUrl": "pdfs/cn-practice-paper.pdf",
+      "tags": [
+        "practice paper",
+        "subnetting",
+        "tcp",
+        "routing"
+      ],
+      "createdAt": "2026-10-04",
+      "pdf": "cn-practice-paper.pdf",
+      "popular": false
+    },
+    {
+      "id": "cn-ports-protocols-reference",
+      "title": "Common Ports and Protocols",
+      "description": "Well-known port numbers and a subnet-mask lookup table with the usable-host formula.",
+      "semester": 5,
+      "subjectId": "cn",
+      "subjectName": "Computer Networks",
+      "unit": "All units",
+      "topic": "Reference",
+      "resourceType": "reference",
+      "pdfUrl": "pdfs/cn-ports-protocols-reference.pdf",
+      "tags": [
+        "ports",
+        "subnet",
+        "cheat sheet",
+        "protocols"
+      ],
+      "createdAt": "2026-10-06",
+      "pdf": "cn-ports-protocols-reference.pdf",
+      "popular": false
+    },
+    {
+      "id": "oop-core-principles",
+      "title": "Classes, Objects and the Four Pillars",
+      "description": "Classes, constructors, encapsulation, abstraction, inheritance and polymorphism with a worked Account class.",
+      "semester": 1,
+      "subjectId": "oop",
+      "subjectName": "Object-Oriented Programming",
+      "unit": "Unit 1",
+      "topic": "Core Concepts",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/oop-core-principles.pdf",
+      "tags": [
+        "class",
+        "object",
+        "encapsulation",
+        "polymorphism"
+      ],
+      "createdAt": "2026-09-15",
+      "pdf": "oop-core-principles.pdf",
+      "popular": true
+    },
+    {
+      "id": "oop-inheritance-polymorphism",
+      "title": "Inheritance, Polymorphism, Interfaces and Exceptions",
+      "description": "Overloading vs overriding, abstract classes vs interfaces, exception handling and a one-line SOLID summary.",
+      "semester": 1,
+      "subjectId": "oop",
+      "subjectName": "Object-Oriented Programming",
+      "unit": "Units 2-3",
+      "topic": "Inheritance and Exceptions",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/oop-inheritance-polymorphism.pdf",
+      "tags": [
+        "inheritance",
+        "interface",
+        "exceptions",
+        "solid"
+      ],
+      "createdAt": "2026-09-20",
+      "pdf": "oop-inheritance-polymorphism.pdf",
+      "popular": false
+    },
+    {
+      "id": "oop-practice-paper",
+      "title": "OOP Model Practice Paper (2024)",
+      "description": "Self-created 50-mark practice paper on classes, polymorphism and custom exceptions. Demo material.",
+      "semester": 1,
+      "subjectId": "oop",
+      "subjectName": "Object-Oriented Programming",
+      "unit": "All units",
+      "topic": "Exam Practice",
+      "resourceType": "pyq",
+      "year": 2024,
+      "pdfUrl": "pdfs/oop-practice-paper.pdf",
+      "tags": [
+        "practice paper",
+        "polymorphism",
+        "exceptions"
+      ],
+      "createdAt": "2026-09-24",
+      "pdf": "oop-practice-paper.pdf",
+      "popular": false
+    },
+    {
+      "id": "se-sdlc-models",
+      "title": "SDLC, Process Models and Requirements",
+      "description": "Waterfall, incremental, spiral and Agile/Scrum; functional vs non-functional requirements; essential UML diagrams.",
+      "semester": 5,
+      "subjectId": "se",
+      "subjectName": "Software Engineering",
+      "unit": "Units 1-2",
+      "topic": "Process Models",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/se-sdlc-models.pdf",
+      "tags": [
+        "sdlc",
+        "agile",
+        "scrum",
+        "uml",
+        "requirements"
+      ],
+      "createdAt": "2026-10-09",
+      "pdf": "se-sdlc-models.pdf",
+      "popular": false
+    },
+    {
+      "id": "se-testing-design",
+      "title": "Design, Testing and Maintenance",
+      "description": "Cohesion and coupling, testing levels, black-box vs white-box, boundary values and cyclomatic complexity.",
+      "semester": 5,
+      "subjectId": "se",
+      "subjectName": "Software Engineering",
+      "unit": "Units 3-4",
+      "topic": "Testing",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/se-testing-design.pdf",
+      "tags": [
+        "testing",
+        "coupling",
+        "cyclomatic complexity",
+        "maintenance"
+      ],
+      "createdAt": "2026-10-13",
+      "pdf": "se-testing-design.pdf",
+      "popular": false
+    },
+    {
+      "id": "se-practice-paper",
+      "title": "Software Engineering Model Practice Paper (2025)",
+      "description": "Self-created practice paper with Waterfall vs Agile and cyclomatic complexity questions. Demo material.",
+      "semester": 5,
+      "subjectId": "se",
+      "subjectName": "Software Engineering",
+      "unit": "All units",
+      "topic": "Exam Practice",
+      "resourceType": "pyq",
+      "year": 2025,
+      "pdfUrl": "pdfs/se-practice-paper.pdf",
+      "tags": [
+        "practice paper",
+        "agile",
+        "testing"
+      ],
+      "createdAt": "2026-10-17",
+      "pdf": "se-practice-paper.pdf",
+      "popular": false
+    },
+    {
+      "id": "web-html-css-basics",
+      "title": "HTML5, CSS Layout and Responsive Design",
+      "description": "Semantic HTML, the box model, Flexbox vs Grid, mobile-first media queries and an accessibility checklist.",
+      "semester": 3,
+      "subjectId": "web",
+      "subjectName": "Web Development",
+      "unit": "Unit 1",
+      "topic": "HTML and CSS",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/web-html-css-basics.pdf",
+      "tags": [
+        "html",
+        "css",
+        "flexbox",
+        "grid",
+        "responsive",
+        "accessibility"
+      ],
+      "createdAt": "2026-10-21",
+      "pdf": "web-html-css-basics.pdf",
+      "popular": true
+    },
+    {
+      "id": "web-javascript-dom",
+      "title": "JavaScript, the DOM and Asynchronous Code",
+      "description": "ES6 essentials, array methods, DOM events, Promises with async/await, fetch and localStorage.",
+      "semester": 3,
+      "subjectId": "web",
+      "subjectName": "Web Development",
+      "unit": "Unit 2",
+      "topic": "JavaScript",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/web-javascript-dom.pdf",
+      "tags": [
+        "javascript",
+        "dom",
+        "async",
+        "fetch",
+        "localstorage"
+      ],
+      "createdAt": "2026-10-27",
+      "pdf": "web-javascript-dom.pdf",
+      "popular": false
+    },
+    {
+      "id": "web-practice-paper",
+      "title": "Web Development Model Practice Paper (2026)",
+      "description": "Self-created practice paper with a responsive Grid layout task and an async fetch exercise. Demo material.",
+      "semester": 3,
+      "subjectId": "web",
+      "subjectName": "Web Development",
+      "unit": "All units",
+      "topic": "Exam Practice",
+      "resourceType": "pyq",
+      "year": 2026,
+      "pdfUrl": "pdfs/web-practice-paper.pdf",
+      "tags": [
+        "practice paper",
+        "css grid",
+        "javascript"
+      ],
+      "createdAt": "2026-10-29",
+      "pdf": "web-practice-paper.pdf",
+      "popular": false
+    },
+    {
+      "id": "web-http-status-reference",
+      "title": "HTTP Methods and Status Codes",
+      "description": "Quick reference for the common HTTP verbs and status code families.",
+      "semester": 3,
+      "subjectId": "web",
+      "subjectName": "Web Development",
+      "unit": "Unit 2",
+      "topic": "HTTP",
+      "resourceType": "reference",
+      "pdfUrl": "pdfs/web-http-status-reference.pdf",
+      "tags": [
+        "http",
+        "status codes",
+        "cheat sheet"
+      ],
+      "createdAt": "2026-10-30",
+      "pdf": "web-http-status-reference.pdf",
+      "popular": false
+    },
+    {
+      "id": "ai-search-agents",
+      "title": "Intelligent Agents and Search Strategies",
+      "description": "Agent types and environments, BFS/DFS/UCS/IDS, A* with admissible heuristics, minimax and alpha-beta pruning.",
+      "semester": 6,
+      "subjectId": "ai",
+      "subjectName": "Artificial Intelligence",
+      "unit": "Unit 1",
+      "topic": "Search",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/ai-search-agents.pdf",
+      "tags": [
+        "agents",
+        "a*",
+        "heuristics",
+        "minimax",
+        "search"
+      ],
+      "createdAt": "2026-10-22",
+      "pdf": "ai-search-agents.pdf",
+      "popular": true
+    },
+    {
+      "id": "ai-ml-basics",
+      "title": "Knowledge Representation and Machine Learning Basics",
+      "description": "Logic, supervised vs unsupervised learning, the training workflow, overfitting and classifier metrics with a worked example.",
+      "semester": 6,
+      "subjectId": "ai",
+      "subjectName": "Artificial Intelligence",
+      "unit": "Unit 2",
+      "topic": "Machine Learning",
+      "resourceType": "notes",
+      "pdfUrl": "pdfs/ai-ml-basics.pdf",
+      "tags": [
+        "machine learning",
+        "overfitting",
+        "precision",
+        "recall",
+        "logic"
+      ],
+      "createdAt": "2026-10-25",
+      "pdf": "ai-ml-basics.pdf",
+      "popular": false
+    },
+    {
+      "id": "ai-practice-paper",
+      "title": "Artificial Intelligence Model Practice Paper (2026)",
+      "description": "Self-created practice paper on A*, heuristics and classifier metrics with answer hints. Demo material.",
+      "semester": 6,
+      "subjectId": "ai",
+      "subjectName": "Artificial Intelligence",
+      "unit": "All units",
+      "topic": "Exam Practice",
+      "resourceType": "pyq",
+      "year": 2026,
+      "pdfUrl": "pdfs/ai-practice-paper.pdf",
+      "tags": [
+        "practice paper",
+        "a*",
+        "metrics"
+      ],
+      "createdAt": "2026-10-31",
+      "pdf": "ai-practice-paper.pdf",
+      "popular": false
+    }
+  ]
+}

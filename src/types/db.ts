@@ -214,6 +214,7 @@ export interface SearchParams {
   year?: number | null
   semesterNumber?: number | null
   subjectId?: string | null
+  subjectTitle?: string | null
   ownerId?: string | null
   since?: string | null
   until?: string | null

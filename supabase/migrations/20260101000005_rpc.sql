@@ -23,6 +23,7 @@ create or replace function public.search_library(
   p_year            integer default null,    -- academic_year (PYQ papers)
   p_semester_number integer default null,
   p_subject_id      uuid default null,
+  p_subject_title   text default null,       -- case-insensitive subject name (works across spaces)
   p_owner_id        uuid default null,
   p_since           timestamptz default null,
   p_until           timestamptz default null,
@@ -73,6 +74,7 @@ as $$
     left join public.profiles p    on p.id = h.owner_id
     where (p_semester_number is null or cl.semester_number = p_semester_number)
       and (p_subject_id is null or h.subject_id = p_subject_id)
+      and (p_subject_title is null or lower(cl.subject_title) = lower(btrim(p_subject_title)))
       and (p_owner_id is null or h.owner_id = p_owner_id)
       and (p_since is null or h.updated_at >= p_since)
       and (p_until is null or h.updated_at < p_until)

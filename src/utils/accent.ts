@@ -1,4 +1,4 @@
-import type { SubjectAccent } from '../types'
+import type { SubjectColor as SubjectAccent } from '../types/db'
 
 /** Literal class names so Tailwind's scanner can see them. */
 export const ACCENT: Record<SubjectAccent, { soft: string; gradient: string; text: string }> = {
