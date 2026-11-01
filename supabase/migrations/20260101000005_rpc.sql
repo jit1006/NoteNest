@@ -163,10 +163,10 @@ returns jsonb language plpgsql security definer set search_path = ''
 as $$
 declare n public.notes;
 begin
-  if auth.uid() is null then raise exception 'auth_required' using errcode = '28000'; end if;
+  if auth.uid() is null then raise exception 'auth_required' using errcode = 'PT401'; end if;
   select * into n from public.notes
    where id = p_id and visibility = 'unlisted' and deleted_at is null and share_token = p_token;
-  if not found then raise exception 'not_found' using errcode = 'P0002'; end if;
+  if not found then raise exception 'not_found' using errcode = 'PT404'; end if;
   insert into public.activity_events (actor_id, space_id, event_type, entity_type, entity_id)
   values (auth.uid(), n.space_id, 'note.shared_view', 'note', n.id);
   return jsonb_build_object(
@@ -179,10 +179,10 @@ returns jsonb language plpgsql security definer set search_path = ''
 as $$
 declare r public.resources; v_files jsonb;
 begin
-  if auth.uid() is null then raise exception 'auth_required' using errcode = '28000'; end if;
+  if auth.uid() is null then raise exception 'auth_required' using errcode = 'PT401'; end if;
   select * into r from public.resources
    where id = p_id and visibility = 'unlisted' and deleted_at is null and share_token = p_token;
-  if not found then raise exception 'not_found' using errcode = 'P0002'; end if;
+  if not found then raise exception 'not_found' using errcode = 'PT404'; end if;
   select coalesce(jsonb_agg(jsonb_build_object(
            'id', f.id, 'original_filename', f.original_filename, 'mime_type', f.mime_type,
            'size_bytes', f.size_bytes, 'extension', f.extension)), '[]'::jsonb)
@@ -199,7 +199,7 @@ returns uuid language plpgsql security definer set search_path = ''
 as $$
 declare v_new uuid := gen_random_uuid();
 begin
-  if auth.uid() is null then raise exception 'auth_required' using errcode = '28000'; end if;
+  if auth.uid() is null then raise exception 'auth_required' using errcode = 'PT401'; end if;
   perform set_config('notenest.rotating', '1', true);
   if p_type = 'note' then
     update public.notes set share_token = v_new
@@ -225,7 +225,7 @@ begin
     raise exception 'only the space owner can invite members' using errcode = '42501';
   end if;
   select pr.id into v_user from public.profiles pr where pr.username = lower(btrim(p_username));
-  if v_user is null then raise exception 'user_not_found' using errcode = 'P0002'; end if;
+  if v_user is null then raise exception 'user_not_found' using errcode = 'PT404'; end if;
   if v_user = auth.uid() then raise exception 'you already own this space' using errcode = '22023'; end if;
   insert into public.space_members (space_id, user_id, role, invited_by)
   values (p_space, v_user, p_role, auth.uid())

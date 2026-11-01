@@ -47,4 +47,4 @@ export function unwrap<T>(res: { data: T | null; error: AnyError }): T {
 }
 
 export const isNotFound = (e: unknown) =>
-  e instanceof ApiError && (e.code === 'PGRST116' || e.status === 404 || e.code === 'P0002')
+  e instanceof ApiError && (e.code === 'PGRST116' || e.status === 404 || e.code === 'P0002' || e.code === 'PT404')

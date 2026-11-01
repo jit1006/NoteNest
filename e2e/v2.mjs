@@ -469,7 +469,7 @@ await check('collaboration: invited editor can edit, viewer cannot; removal revo
   await go(page, `/spaces/${sp.id}`)
   await page.getByRole('button', { name: `Remove ${du.username}` }).click()
   await page.waitForTimeout(600)
-  await go(d.page, `/notes/${noteId}`); await d.page.getByRole('heading', { name: /isn.t available/ }).waitFor()
+  await d.page.reload(); await d.page.getByRole('heading', { name: /isn.t available/ }).waitFor()
   await c.ctx.close(); await d.ctx.close(); await ctx.close()
 })
 
