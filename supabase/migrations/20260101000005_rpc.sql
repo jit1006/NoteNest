@@ -2,6 +2,18 @@
 -- Read RPCs are SECURITY INVOKER so Row Level Security always applies to the caller.
 -- Only functions that must aggregate across private data (popularity) or validate secrets are SECURITY DEFINER.
 
+-- ───────────── context labels for items the caller can already read ─────────────
+-- Publishing a note in a private space exposes ONLY its semester number/title and subject title (never the space or siblings).
+create or replace function public.container_labels(p_semester uuid, p_subject uuid)
+returns table (semester_number smallint, semester_title text, subject_title text)
+language sql stable security definer set search_path = ''
+as $$
+  select s.number, s.title,
+         (select sub.title from public.subjects sub where sub.id = p_subject and sub.deleted_at is null)
+  from public.semesters s
+  where s.id = p_semester and s.deleted_at is null;
+$$;
+
 -- ───────────── full-text search + filters + pagination ─────────────
 create or replace function public.search_library(
   p_query           text default '',
@@ -54,13 +66,12 @@ as $$
       and (p_year is null or r.academic_year = p_year)
   ),
   filtered as (
-    select h.*, s.number as semester_number, s.title as semester_title, sub.title as subject_title,
+    select h.*, cl.semester_number, cl.semester_title, cl.subject_title,
            p.username as owner_username, p.display_name as owner_display_name
     from hits h
-    left join public.semesters s   on s.id = h.semester_id
-    left join public.subjects sub  on sub.id = h.subject_id
+    left join lateral public.container_labels(h.semester_id, h.subject_id) cl on true
     left join public.profiles p    on p.id = h.owner_id
-    where (p_semester_number is null or s.number = p_semester_number)
+    where (p_semester_number is null or cl.semester_number = p_semester_number)
       and (p_subject_id is null or h.subject_id = p_subject_id)
       and (p_owner_id is null or h.owner_id = p_owner_id)
       and (p_since is null or h.updated_at >= p_since)

@@ -68,7 +68,7 @@ export interface UploadArgs {
 }
 
 /** Upload → create resource → register file metadata. Cleans up on failure so nothing is left half-created. */
-export async function uploadResource(a: UploadArgs): Promise<Resource> {
+export async function uploadResource(a: UploadArgs): Promise<Resource & { storage_path: string }> {
   const check = await validateFile(a.file, a.allowedKinds)
   if (!check.ok) throw new ApiError(check.error, '22023')
   const path = `${a.ownerId}/${crypto.randomUUID()}.${check.ext}`
@@ -87,7 +87,7 @@ export async function uploadResource(a: UploadArgs): Promise<Resource> {
       resource_id: resource.id, owner_id: a.ownerId, storage_path: path, original_filename: a.file.name.slice(0, 255),
       extension: check.ext, mime_type: check.mime, size_bytes: a.file.size,
     }).select().single())
-    return resource
+    return { ...resource, storage_path: path }
   } catch (e) {
     if (resource) await supabase.from('resources').delete().eq('id', resource.id)
     await supabase.storage.from('files').remove([path])
