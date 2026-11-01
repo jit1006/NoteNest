@@ -42,13 +42,15 @@ Legend: `[x]` done and verified in CI · `[~]` implemented, verified only partia
 - [x] Dashboard (semester cards, recent, favourites, popular, recent uploads), Explore with FTS, filters (type, category, semester, year, subject, owner, date), pagination, permission-aware
 
 ## Phase 10 — Collaboration, polish, tests
-- [x] Unlisted sharing (token RPC + edge function), reports, rate limits, activity feed
+- [x] Unlisted sharing for notes/resources metadata (token RPC, verified in DB + browser tests), reports, rate limits, activity feed
+- [~] Edge function `shared-file-url` (files/images inside UNLISTED items): written, **not executed in CI** (the Edge runtime is not started there) — test it after `supabase functions deploy`
 - [x] Unit tests (sanitizer, anchors, files), DB tests, Playwright e2e (auth with Mailpit, two users, uploads, PDF, highlights, references, mobile)
-- [~] Tags: tables + policies + guard trigger exist and are tested at DB level; **no tag UI yet**
+- [~] Tags: tables + policies + guard trigger exist; **no tag UI and no DB test yet**
 - [~] Accessibility: semantic landmarks, labels, focus states, skip link, aria-live; no automated axe audit
 - [ ] Real-time co-editing (out of scope), antivirus scanning (out of scope)
 
 ## Phase 11 — Build & deployment
 - [x] Production build in CI; CSP-friendly `index.html`; optional `server.mjs`
 - [x] `docs/SETUP.md`, `docs/DEPLOYMENT.md`
+- [ ] Hosted Supabase project + `supabase db push` (needs your account)
 - [ ] Deploy to Embarko — **waiting for the official Embarko deployment prompt** and your hosted Supabase credentials
